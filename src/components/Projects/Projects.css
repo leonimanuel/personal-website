@@ -1,0 +1,38 @@
+body {
+	/*text-align: center;*/
+	color: white;
+}
+div {
+	border: 1px solid green;
+	/*text-align: center;*/
+}
+
+.project-wrapper {
+	width:90%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap-reverse;
+	margin: 20px auto;
+	color: white;
+	/*text-align: center;*/
+}
+
+.project-description {
+	/*display: inline-block;*/
+	min-width: 200px;
+	max-width: 400px;
+}
+
+.project-link {
+	text-decoration: none;
+}
+
+/*.project-link:active {
+	text-decoration: none;
+}*/
+
+.project-pic {
+	/*display: inline-block;*/
+	width: 100%;
+	max-width: 400px;
+}

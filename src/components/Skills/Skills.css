@@ -1,0 +1,70 @@
+.ContainerWrapper {
+	display: flex;
+	justify-content: center;
+	/*border: 2px solid gold;*/
+}
+
+.SkillContainer {
+	max-width: 1000px;
+	margin-top: 100px;
+	display: grid;
+    grid-template-columns: repeat(20, 2fr);
+    grid-template-rows: 35px repeat(10, 30%);
+    /*border: 2px solid silver;*/
+}
+
+.LogoContainer {
+	/*border: 1px solid gold;*/
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.SkillCaption {
+	color: white;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	font-weight: bold;
+}
+
+.Logo {
+	/*border: 1px solid silver;*/
+	width: 90%;
+	transition: width 0.3s ease;
+}
+
+#Html {
+	grid-column: 2/5;
+	grid-row-start: 2;
+}
+
+#Css {
+	width: 90%; 
+	grid-column: 17/20;
+	grid-row-start: 2;
+}
+
+#JavaScript {
+	grid-column: 9/13;
+	grid-row-start: 3;
+}
+
+#JsLogo {
+	transition: width 0.3s ease;
+}
+
+.Logo:hover {
+	width: 95%;
+}
+
+#JsLogo:hover ~ #JsCaption {
+	/*width: 50%;*/
+	color: green;
+}
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+.NavItem {
+	color: white;
+	margin: 0px 10px;
+	font-size: 2em;
+	cursor: pointer;
+	/*transition: all 1s ease;*/
+}
+
+.NavItem:hover {
+	text-decoration: underline;
+}
+
+
+
