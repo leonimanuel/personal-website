@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = (onRouteChange) => {
 	return (
-		<div style={{'font-size': '50px'}}>Contact</div>
+		<div style={{'fontSize': '50px'}}>Contact</div>
 		)
 };
 

@@ -9,7 +9,7 @@ import PersonalWebsitePic from './personal-website-pic.png'
 const Projects = (onRouteChange) => {
 	return (
 		<div id="container">
-			<div style={{'font-size': '50px'}}>Projects</div>
+			<div style={{'fontSize': '50px'}}>Projects</div>
 			<div id="projects-container">
 				<div className="project-wrapper" id="face-recognition-wrapper">
 					<h3 className="project-title">Hangman</h3>

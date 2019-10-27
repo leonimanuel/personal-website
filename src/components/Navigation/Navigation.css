@@ -1,14 +1,36 @@
+nav {
+	/*position: sticky;*/
+	/*padding: 0 2%;*/
+	width: 100%;
+	align-items: flex-end;
+	display: flex;
+	justify-content: flex-end;
+	background-color: snow;
+	/*border: 1px solid black;*/
+}
+
 .NavItem {
 	/*color: black;*/
-	margin: 0px 10px;
+	margin: 0; /* super important for some reason */
+	padding: 0 10px;
 	font-size: 2em;
 	cursor: pointer;
 	/*transition: all 1s ease;*/
 }
 
-.NavItem:hover {
+/*.NavItem:active {
 	text-decoration: underline;
+}*/
+
+
+
+
+#hover-line {
+  height: 0px;
+  /*width: 150px;*/
+  border: 1px solid;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  transition: 0.2s ease;
 }
-
-
-

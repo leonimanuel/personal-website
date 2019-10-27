@@ -8,7 +8,7 @@ import CssLogo from './css3-logo.png';
 const Skills = (onRouteChange) => {
 	return (
 		<div>
-			<p style={{margin: '0px', 'margin-top': '30px', color: 'white', 'font-size': '40px'}}>What I got</p>
+			<p style={{margin: '0px', 'marginTop': '30px', color: 'white', 'fontSize': '40px'}}>What I got</p>
 			<div className='ContainerWrapper'>
 				<div className='SkillContainer'>
 					<div className="LogoContainer" id="Html">

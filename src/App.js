@@ -17,13 +17,16 @@ class App extends Component {
 	constructor() {
 		super()
 		this.state = {
-			route: 'home'
+			route: 'home',
+			// routeItem: "hohoho"
 		}
 	}
 
 	onRouteChange = (routeBoi) => {
 		this.setState({route: routeBoi})
-		console.log(routeBoi)
+		console.log("Hey Girl")
+		// this.setState({routeItem: selectionId});
+		// console.log(this.state.routeItem)
 	}
 
 	
@@ -32,7 +35,7 @@ class App extends Component {
   	const { route } = this.state; 
   	return (
 	    <div className="App">
-	    	<Navigation onRouteChange={this.onRouteChange} />
+	    	<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
 	    	<DarkMode />
 	    	{ route === 'home'
 	    	? <Home onRouteChange={this.onRouteChange} />
