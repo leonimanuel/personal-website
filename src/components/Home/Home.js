@@ -3,7 +3,10 @@ import './Home.css';
 
 const Home = (onRouteChange) => {
 	return (
-		<div className="HomeWord" style={{color: 'blue', 'font-size': '50px'}}>Home</div>
+		<div>
+			<div id="home-title" style={{}}>Welcome to squelchify</div>
+			<div>I specialize in making websites squelch.</div>
+		</div>
 		)
 };
 

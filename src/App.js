@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import DarkMode from './components/DarkMode/DarkMode'
 import Navigation from './components/Navigation/Navigation';
 import './App.css'
 import Skills from './components/Skills/Skills';
@@ -10,24 +11,29 @@ import Contact from './components/Contact/Contact';
 // import logo from './logo.svg';
 // import './App.css';
 
+document.body.style.color = "black";
+
 class App extends Component {
 	constructor() {
 		super()
 		this.state = {
-			route: 'projects'
+			route: 'home'
 		}
 	}
 
 	onRouteChange = (routeBoi) => {
 		this.setState({route: routeBoi})
-		console.log('route')
+		console.log(routeBoi)
 	}
+
+	
 
   render() {
   	const { route } = this.state; 
   	return (
 	    <div className="App">
 	    	<Navigation onRouteChange={this.onRouteChange} />
+	    	<DarkMode />
 	    	{ route === 'home'
 	    	? <Home onRouteChange={this.onRouteChange} />
 	    	: (route === 'skills')
@@ -35,7 +41,7 @@ class App extends Component {
         	: (route === 'projects')
     		? <Projects onRouteChange={this.onRouteChange} />
         	: (route === 'contact')
-    		? <Contact onRouteChange={this.onRouteChange} />
+    		? <Contact onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
         	: <WrongRoute />
 	    	}
 	    </div>
