@@ -70,6 +70,7 @@ class Navigation extends React.Component {
 				<p className="NavItem" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
 				<p className="NavItem" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
 			</nav>
+			<div id="menu-spacer" style={{'height': "55px"}}></div>
 		</div>
 	);
 	}	
