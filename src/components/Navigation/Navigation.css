@@ -22,11 +22,9 @@ nav {
 	/*transition: all 1s ease;*/
 }
 
-/*.NavItem:active {
-	text-decoration: underline;
+/*#nav-skills::after {
+	width: 50px;
 }*/
-
-
 
 
 #hover-line {

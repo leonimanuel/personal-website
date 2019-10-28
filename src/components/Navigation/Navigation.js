@@ -13,7 +13,9 @@ class Navigation extends React.Component {
 	}
 
 	componentDidMount() {
-		this.setState({selectedItem: document.getElementById("nav-home")})
+		this.setState({selectedItem: document.getElementById("nav-home")});
+		document.getElementById('hover-line').style.left = `${document.getElementById("nav-home").getBoundingClientRect().left}px`
+		document.getElementById('hover-line').style.width = `${document.getElementById("nav-home").clientWidth}px`
 	}
 
 	slideHover = () => {
