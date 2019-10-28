@@ -1,8 +1,17 @@
 #dark-mode-button  {
+	display: inline-block;
+	padding: 5px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	/*border: 2px solid;*/
+	border-radius: 10px;
 	/*font-size: 50px;*/
 	font-size: 10px;
-	/*border: 2px solid white;*/
+	font-weight: bold;
 	margin: auto;
 	text-align: right;
-	margin-right: 5%;
+	background-color: black;
+	color: white;
+	transition: 0.2s ease;
 }

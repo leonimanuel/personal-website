@@ -13,11 +13,23 @@ class DarkMode extends React.Component {
 	hitLights = () => {
 		if (this.state.lightMode === "light") {
 			document.body.style.backgroundColor = "#355664";
+			
+			let darkButton = document.getElementById('dark-mode-button')
+			darkButton.style.backgroundColor = "white"
+			darkButton.style.color = "black"
+			
 			document.body.style.color = "white";
 			this.setState({lightMode: "dark"});
+			darkButton.innerHTML = "LIGHT MODE"
 			
 		} else {
 			document.body.style.backgroundColor = "beige";
+			
+			let darkButton = document.getElementById('dark-mode-button')
+			darkButton.style.backgroundColor = "black"
+			darkButton.style.color = "white"
+			darkButton.innerHTML = "DARK MODE"
+
 			document.body.style.color = "black";
 			this.setState({lightMode: "light"})
 		}
