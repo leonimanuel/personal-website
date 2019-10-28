@@ -14,8 +14,10 @@ class Navigation extends React.Component {
 
 	componentDidMount() {
 		this.setState({selectedItem: document.getElementById("nav-home")});
+		// document.createElement("hover-line")
 		document.getElementById('hover-line').style.left = `${document.getElementById("nav-home").getBoundingClientRect().left}px`
 		document.getElementById('hover-line').style.width = `${document.getElementById("nav-home").clientWidth}px`
+
 	}
 
 	slideHover = () => {
@@ -67,7 +69,7 @@ class Navigation extends React.Component {
 			<div id="selection-line"></div>
 			<nav className='' id='nav-wrapper' style={{}}>
 				<div id="hover-line"></div>
-				<p className="NavItem" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': 'auto', 'marginLeft': '0px', 'fontSize': '3em'}}>Home</p>
+				<p className="NavItem" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': 'auto', 'marginLeft': '0px', 'fontSize': '2em'}}>Home</p>
 				<p className="NavItem" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
 				<p className="NavItem" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
 				<p className="NavItem" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
