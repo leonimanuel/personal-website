@@ -12,13 +12,21 @@ class Navigation extends React.Component {
 		}
 	}
 
-	componentDidMount() {
-		this.setState({selectedItem: document.getElementById("nav-home")});
-		// document.createElement("hover-line")
-		document.getElementById('hover-line').style.left = `${document.getElementById("nav-home").getBoundingClientRect().left}px`
-		document.getElementById('hover-line').style.width = `${document.getElementById("nav-home").clientWidth}px`
 
-	}
+
+	componentDidMount() {
+		
+
+		this.setState({selectedItem: document.getElementById("nav-home")});
+		let hoverLine = document.createElement("div");
+		hoverLine.setAttribute("id", "hover-line")
+		document.getElementById("nav-wrapper").appendChild(hoverLine)
+		hoverLine.setAttribute("style", "height: 0; border-bottom: 2px solid; position: fixed; transition: 0.2s ease");
+		hoverLine.style.top = `${document.getElementById("nav-home").getBoundingClientRect().bottom}px`
+		hoverLine.style.left = `${document.getElementById("nav-home").getBoundingClientRect().left}px`;
+		hoverLine.style.width = `${document.getElementById("nav-home").clientWidth}px`;
+
+	}	
 
 	slideHover = () => {
 		let slideBoi = document.getElementById('hover-line')
@@ -65,10 +73,8 @@ class Navigation extends React.Component {
 		const { onRouteChange } = this.props;
 		return (
 		<div className='NavWrapper' style={{'textAlign': 'center'}}>
-			
 			<div id="selection-line"></div>
-			<nav className='' id='nav-wrapper' style={{}}>
-				<div id="hover-line"></div>
+			<nav className='' id='nav-wrapper' style={{"border-bottom": "2px solid red"}}>
 				<p className="NavItem" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': 'auto', 'marginLeft': '0px', 'fontSize': '2em'}}>Home</p>
 				<p className="NavItem" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
 				<p className="NavItem" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
