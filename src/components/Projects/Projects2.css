@@ -1,0 +1,76 @@
+.projects-wrapper {
+/*	display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 20px;
+  grid-template-rows: 1fr;*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-container {
+	min-width: 300px;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	/*border: 2px solid green;*/
+	/*background-image: url("crown-clothing-pic.png");*/
+	background-size: 300px 300px;
+	/*margin: 10px auto;*/
+	margin: 0 20px;
+	margin-bottom: 20px;
+
+}
+
+.project-title {
+	margin: 0;
+}
+
+.pic-and-text {
+	position: relative;
+	/*border: 5px solid purple;*/
+}
+
+.project-text-box {
+	/*border: 2px solid red;*/
+	position: absolute;
+	align-items: middle;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: snow;
+  background-color: rgb(25,25,112, 0.9);
+  /*visibility: hidden;*/
+  opacity: 0;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.project-text {
+	font-size: 1em;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	font-weight: bold;
+}
+
+.project-text-box:hover {
+	z-index: 1;
+	opacity: 1;
+
+}
+
+.project-pic {
+	z-index: 0;
+	/*width: 500px;*/
+	/*min-width: 500px;*/
+	border-radius: 20px;
+}
+
+.project-pic:hover {
+	opacity: 0.5;
+}
+
+

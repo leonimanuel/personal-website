@@ -17,7 +17,7 @@ class DarkMode extends React.Component {
 
 			let darkButton = document.getElementById('dark-mode-button')
 			darkButton.style.backgroundColor = "white"
-			darkButton.style.color = "snow"
+			darkButton.style.color = "black"
 			
 			document.body.style.color = "white";
 			this.setState({lightMode: "dark"});
@@ -28,7 +28,7 @@ class DarkMode extends React.Component {
 			
 			let darkButton = document.getElementById('dark-mode-button')
 			darkButton.style.backgroundColor = "black"
-			darkButton.style.color = "white"
+			darkButton.style.color = "snow"
 			darkButton.innerHTML = "DARK MODE"
 
 			document.body.style.color = "black";

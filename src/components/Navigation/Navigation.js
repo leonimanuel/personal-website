@@ -15,7 +15,17 @@ class Navigation extends React.Component {
 
 
 	componentDidMount() {
-		
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+		    document.getElementById("nav-wrapper").style.borderBottom = "2px solid rgb(0,0,0, 0.2)";
+
+		  } 
+		  else {
+		    document.getElementById("nav-wrapper").style.borderBottom = "0";
+		  }
+		}
 
 		this.setState({selectedItem: document.getElementById("nav-home")});
 		let hoverLine = document.createElement("div");
@@ -50,7 +60,7 @@ class Navigation extends React.Component {
 
 		// console.log(skills.offsetWidth);
 		//console.log(Skills.style.color)
-		console.log(this.state.selectedItem)
+		// console.log(this.state.selectedItem)
 	}
 
 	chooseItem = () => {
@@ -74,7 +84,7 @@ class Navigation extends React.Component {
 		return (
 		<div className='NavWrapper' style={{'textAlign': 'center'}}>
 			<div id="selection-line"></div>
-			<nav className='' id='nav-wrapper' style={{"border-bottom": "2px solid red"}}>
+			<nav className='' id='nav-wrapper' style={{"borderBottom": "0px solid red", "transition": "0.2s ease"}}>
 				<p className="NavItem" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': 'auto', 'marginLeft': '0px', 'fontSize': '2em'}}>Home</p>
 				<p className="NavItem" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
 				<p className="NavItem" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>

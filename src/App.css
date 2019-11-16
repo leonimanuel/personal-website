@@ -1,6 +1,10 @@
 body {
   color: black;
-  background-color: snow;
+  background-color: aliceblue;
+}
+
+div {
+  /*border: 1px solid black;*/
 }
 
 .App {

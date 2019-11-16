@@ -1,0 +1,148 @@
+.skills-container {
+/*	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 20px;
+	grid-template-rows: 1fr;*/
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/*@media(max-width: 540px) {
+	.skills-container {
+		grid-template-columns: repeat(3, minmax(350px, 1fr));
+	}
+}*/
+
+
+.skills-wrapper {
+	/*text-align: center;*/
+/*	writing-mode: verical-rl;
+	text-orientation: upright;*/
+	/*border: 2px solid blue;*/
+	margin: 20px auto;
+	width: 350px;
+	min-height: 300px;
+	position: relative;
+}
+
+.skill-symbol, .skill-symbol-back {
+	position: absolute;
+	height: 40px;
+	padding: 10px;
+	top: -25px;
+	width: auto;
+
+	background-color: white;
+/*	left: 50%;
+	margin-left: -25px;*/
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	
+	border-radius: 75px;	
+}
+
+.skill-symbol-back {
+	top: -28px;
+	background-color: blue;
+	z-index: -1;
+	border: 3px solid black;
+}
+
+.skill-title-box, .skill-title-box-back {
+	max-width: 100px;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	/*transform-origin: center left ;*/
+	position: absolute;
+	/*margin: auto 0;*/
+	left: 10px;
+	top: 30px;
+	background-color: snow;
+	/*outline: 3px solid black;*/
+	/*border: 3px solid black;*/
+	border-radius: 10px;	
+}
+
+/*.skill-title-box::after {
+	content: "Client-Side";
+	background-color: green;
+}*/
+
+.skill-title-box-back {
+	left: 7px;
+	top: 27px;
+	border: 3px solid black;
+	z-index: -1;
+}
+
+
+.skill-title{
+	margin: 5px 0;
+}
+
+.skill-box {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 30px 0;
+	min-height: 300px;
+	width: 300px;
+	background-color: snow;
+	border: 3px solid black;
+	border-radius: 20px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.skill-binder {
+	display: flex;
+	/*flex-direction: row-reverse;*/
+	font-size: 25px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+.collapsible {
+	/*color: green;*/
+}
+
+.logo {
+	width: 25px;
+	margin: 0 5px;
+	/*display: hidden;*/
+}
+
+.subskill-box {
+	display: flex;
+	flex-direction: column;
+	margin-left: 55px;
+	/*align-items: center;*/
+	/*border: 2px solid red;*/
+	padding-bottom: 10px;
+	
+	overflow: hidden;
+	max-height: 1px;
+	transition: max-height 0.2s ease-out;
+}
+
+.subskill-binder {
+	display: flex;
+}
+
+.subskill-logo {
+	height: 20px;
+	margin-right: 5px;
+
+}
+
+.subskill-item {
+	/*color: grey;*/
+	/*font-weight: none;*/
+	margin: 0;
+	font-size: 20px
+}
