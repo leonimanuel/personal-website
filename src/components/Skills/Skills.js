@@ -3,7 +3,19 @@ import './Skills2.css'
 import JsLogo from './JsLogo.svg';
 import HtmlLogo from './HTML5_Badge.svg';
 import CssLogo from './css3-logo.png';
-import CodingSymbol from "./coding_symbol.svg"
+import ReactLogo from "./react-icon2.svg"
+import NodeLogo from "./nodejs-icon.svg"
+import TypeScriptLogo from "./typescript-icon.svg"
+
+import KeyIcon from "./key-icon.svg"
+
+
+import CodingSymbol from "./webdev-icon.svg"
+import SecuritySymbol from "./lock-icon.svg"
+import PerformanceSymbol from "./performance-icon.svg"
+import DatabaseSymbol from "./database-icon.svg"
+import TestingSymbol from "./testing-icon.svg"
+import DeploymentSymbol from "./cloud-icon.svg"
 
 
 class Skills extends React.Component {
@@ -60,8 +72,12 @@ class Skills extends React.Component {
 		return (
 			<div className="skills-container">
 				<div className="skills-wrapper">
-					<img className="skill-symbol-back" src={CodingSymbol} alt="" />
-					<img className="skill-symbol " src={CodingSymbol} alt="" />
+					<div className="skill-symbol-box-back">
+						<img className="skill-symbol " src={CodingSymbol} alt="" />
+					</div>
+					<div className="skill-symbol-box">
+						<img className="skill-symbol " src={CodingSymbol} alt="" />
+					</div>
 					
 					<div className="skill-title-box-back">
 						<h1 className="skill-title">Client-Side</h1>
@@ -72,15 +88,15 @@ class Skills extends React.Component {
 					
 					<div className="skill-box">
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20" height=""/>
 							<div className="skill-item">HTML</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={CssLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={CssLogo} alt="" width="20" height=""/>
 							<div className="skill-item">CSS</div>
 						</div>
 						<div className="skill-binder collapsible" id="js-collapsible">
-							<img className="logo" id="CssLogo" src={JsLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={JsLogo} alt="" width="20" height=""/>
 							<div className="skill-item">JavaScript</div>
 						</div>
 						<div className="subskill-box" style={{"display": "none"}}>
@@ -94,7 +110,7 @@ class Skills extends React.Component {
 							</div>
 						</div>
 						<div className="skill-binder collapsible">
-							<img className="logo" id="CssLogo" src={JsLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={ReactLogo} alt="" width="20" height=""/>
 							<div className="skill-item">React</div>
 						</div>
 						<div className="subskill-box" style={{"display": "none"}}>
@@ -112,19 +128,23 @@ class Skills extends React.Component {
 							</div>
 						</div>
 						<div className="skill-binder collapsible">
-							<img className="logo" id="CssLogo" src={JsLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={NodeLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Node</div>
 						</div>
 						<div className="skill-binder collapsible">
-							<img className="logo" id="CssLogo" src={JsLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={TypeScriptLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">TypeScript</div>
 						</div>
 					</div>
 				</div>
 
 				<div className="skills-wrapper">
-					<img className="skill-symbol-back" src={CodingSymbol} alt="" />
-					<img className="skill-symbol " src={CodingSymbol} alt="" />
+					<div className="skill-symbol-box-back">
+						<img className="skill-symbol " src={SecuritySymbol} alt="" />
+					</div>
+					<div className="skill-symbol-box">
+						<img className="skill-symbol " src={SecuritySymbol} alt="" />
+					</div>
 					
 					<div className="skill-title-box-back">
 						<h1 className="skill-title">Security</h1>
@@ -135,7 +155,7 @@ class Skills extends React.Component {
 					
 					<div className="skill-box">
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={KeyIcon} alt="" width="20px" height=""/>
 							<div className="skill-item">SSH</div>
 						</div>
 						<div className="skill-binder">
@@ -150,8 +170,12 @@ class Skills extends React.Component {
 				</div>
 
 				<div className="skills-wrapper">
-					<img className="skill-symbol-back" src={CodingSymbol} alt="" />
-					<img className="skill-symbol " src={CodingSymbol} alt="" />
+					<div className="skill-symbol-box-back">
+						<img className="skill-symbol " src={PerformanceSymbol} alt="" />
+					</div>
+					<div className="skill-symbol-box">
+						<img className="skill-symbol " src={PerformanceSymbol} alt="" />
+					</div>
 					
 					<div className="skill-title-box-back">
 						<h1 className="skill-title">Performance</h1>
@@ -185,8 +209,12 @@ class Skills extends React.Component {
 				</div>
 
 				<div className="skills-wrapper">
-					<img className="skill-symbol-back" src={CodingSymbol} alt="" />
-					<img className="skill-symbol " src={CodingSymbol} alt="" />
+					<div className="skill-symbol-box-back">
+						<img className="skill-symbol " src={DatabaseSymbol} alt="" />
+					</div>
+					<div className="skill-symbol-box">
+						<img className="skill-symbol " src={DatabaseSymbol} alt="" />
+					</div>
 					
 					<div className="skill-title-box-back">
 						<h1 className="skill-title">Server-side</h1>
@@ -218,8 +246,12 @@ class Skills extends React.Component {
 					</div>
 				</div>
 				<div className="skills-wrapper">
-					<img className="skill-symbol-back" src={CodingSymbol} alt="" />
-					<img className="skill-symbol " src={CodingSymbol} alt="" />
+					<div className="skill-symbol-box-back">
+						<img className="skill-symbol " src={TestingSymbol} alt="" />
+					</div>
+					<div className="skill-symbol-box">
+						<img className="skill-symbol " src={TestingSymbol} alt="" />
+					</div>
 					
 					<div className="skill-title-box-back">
 						<h1 className="skill-title">Testing</h1>
@@ -243,8 +275,12 @@ class Skills extends React.Component {
 					</div>
 				</div>
 				<div className="skills-wrapper">
-					<img className="skill-symbol-back" src={CodingSymbol} alt="" />
-					<img className="skill-symbol " src={CodingSymbol} alt="" />
+					<div className="skill-symbol-box-back">
+						<img className="skill-symbol " src={DeploymentSymbol} alt="" />
+					</div>
+					<div className="skill-symbol-box">
+						<img className="skill-symbol " src={DeploymentSymbol} alt="" />
+					</div>
 					
 					<div className="skill-title-box-back">
 						<h1 className="skill-title">Deployment</h1>
