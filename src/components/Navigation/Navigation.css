@@ -13,6 +13,7 @@ nav {
 	background-color: snow;
 	color: black;
 	/*border: 1px solid black;*/
+	z-index: 2;
 }
 
 .NavItem {

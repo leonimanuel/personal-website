@@ -1,0 +1,27 @@
+.icons-container {
+	display: flex;
+	flex-direction: column;
+	/*border: 2px solid blue;*/
+	justify-content: center;
+	/*align-items: center;*/
+	margin-left: 50px;
+}
+
+.icon-box {
+	/*border: 2px solid black;*/
+	background-color: aliceblue;
+	border-radius: 75px;
+	margin: 5px 0px;
+	/*height: 85px;*/
+}
+
+.contact-icon {
+	width: 30px;
+	height: width;
+	padding: 15px;
+	margin: 0;
+}
+
+#phone-icon {
+	/*margin-top: 90px;*/
+}

@@ -285,26 +285,13 @@ class Skills extends React.Component {
 					<div className="skill-title-box">
 						<h1 className="skill-title">Skills</h1>
 					</div>
-					
-					<div className="skill-box">
-						<div className="skill-binder">
-							<div className="logo">😭</div>
-							<div className="skill-item">Crying</div>
-						</div>
-						<div className="skill-binder">
-							<div className="logo">😭</div>
-							<div className="skill-item">Pretty much</div>
-						</div>
-						<div className="skill-binder">
-							<div className="logo">😭</div>
-							<div className="skill-item">All the time </div>
-						</div>
-					</div>
 				</div>
 			</div>
 		)
 	}
-	
+};
+
+export default Skills;
 	// componentDidMount() {
 	// 	let skillBox = document.createElement("div");
 	// 	skillBox.setAttribute("id", "skill-box")
@@ -364,6 +351,4 @@ class Skills extends React.Component {
 	// 	)
 	// }
 	
-};
 
-export default Skills;
