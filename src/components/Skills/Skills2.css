@@ -8,6 +8,8 @@
 	display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  height: 100vh;
+  border: 3px solid blue;
 }
 
 /*@media(max-width: 540px) {
@@ -109,13 +111,14 @@
 	border-radius: 20px;
 	text-align: left;
 	font-weight: bold;
+	/*align-items: center;*/
 }
 
 .skill-binder {
 	display: flex;
 	/*flex-direction: row-reverse;*/
 	font-size: 25px;
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-bottom: 5px;
 }
 
@@ -126,7 +129,7 @@
 .logo {
 	/*width: 25px;*/
 	/*height: 25px;*/
-	margin: 0 5px;
+	margin: auto 5px;
 	/*display: hidden;*/
 }
 

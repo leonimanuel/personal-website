@@ -8,7 +8,20 @@ import NodeLogo from "./nodejs-icon.svg"
 import TypeScriptLogo from "./typescript-icon.svg"
 
 import KeyIcon from "./key-icon.svg"
-
+import HashLogo from "./hash-icon.svg"
+import FirebaseLogo from "./firebase-icon.svg"
+import PostgresqlLogo from "./postgresql-icon.svg"
+import RedisLogo from "./redis-icon.svg"
+import GraphqlLogo from "./graphql-icon.svg"
+import ApolloLogo from "./apollo-icon.svg"
+import AwsLogo from "./aws-icon.svg"
+import HerokuLogo from "./heroku-icon.svg"
+import WebpackLogo from "./webpack-icon.svg"
+import ParcelLogo from "./parcel-icon.png"
+import DockerLogo from "./docker-icon.svg"
+import BalanceLogo from "./balance-icon.svg"
+import PicturesLogo from "./pictures-icon.svg"
+import ScissorsLogo from "./scissors-icon.svg"
 
 import CodingSymbol from "./webdev-icon.svg"
 import SecuritySymbol from "./lock-icon.svg"
@@ -16,6 +29,7 @@ import PerformanceSymbol from "./performance-icon.svg"
 import DatabaseSymbol from "./database-icon.svg"
 import TestingSymbol from "./testing-icon.svg"
 import DeploymentSymbol from "./cloud-icon.svg"
+
 
 
 class Skills extends React.Component {
@@ -160,10 +174,14 @@ class Skills extends React.Component {
 						</div>
 						<div className="skill-binder">
 							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<div className="skill-item">Sessions & JWT</div>
+						</div>
+						<div className="skill-binder">
+							<img className="logo" id="CssLogo" src={HashLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Bcrypt</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={FirebaseLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Firebase Auth</div>
 						</div>
 					</div>
@@ -186,11 +204,11 @@ class Skills extends React.Component {
 					
 					<div className="skill-box">
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={ScissorsLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Code splitting</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={BalanceLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Load balancing</div>
 						</div>
 						<div className="skill-binder">
@@ -198,7 +216,7 @@ class Skills extends React.Component {
 							<div className="skill-item">Caching</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={PicturesLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Image optimzation</div>
 						</div>
 						<div className="skill-binder">
@@ -224,24 +242,24 @@ class Skills extends React.Component {
 					</div>
 					<div className="skill-box">
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={FirebaseLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Firebase</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={PostgresqlLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">PostgreSQL</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={RedisLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Redis</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-							<div className="skill-item">Sessions & JWT</div>
+							<img className="logo" id="CssLogo" src={GraphqlLogo} alt="" width="20px" height=""/>
+							<div className="skill-item">GraphQL</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-							<div className="skill-item">GraphQL & Appollo</div>
+							<img className="logo" id="CssLogo" src={ApolloLogo} alt="" width="20px" height=""/>
+							<div className="skill-item">Apollo</div>
 						</div>
 					</div>
 				</div>
@@ -290,23 +308,23 @@ class Skills extends React.Component {
 					</div>
 					<div className="skill-box">
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-							<div className="skill-item">Amazon Web Services</div>
+							<img className="logo" id="CssLogo" src={AwsLogo} alt="" width="20px" height=""/>
+							<div className="skill-item">Amazon Web</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={HerokuLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Heroku</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="CssLogo" src={WebpackLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Webpack 4</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="parcel-icon" src={ParcelLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Parcel</div>
 						</div>
 						<div className="skill-binder">
-							<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+							<img className="logo" id="docker-icon" src={DockerLogo} alt="" width="20px" height=""/>
 							<div className="skill-item">Docker</div>
 						</div>
 					</div>
