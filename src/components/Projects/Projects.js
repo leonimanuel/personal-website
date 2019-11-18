@@ -14,43 +14,45 @@ import SmartbrainPic from './smart-brain-pic.png'
 const Projects = (onRouteChange) => {
 	return (
 	<div className="projects-wrapper">
+	<h1 className="projects-heading">PROJECTS</h1>
 		<div className="project-container">
-			<h2 className="project-title">Crown Clothing</h2>
 			<div className="pic-and-text">
 				<img className="project-pic" src={CrownClothingPic} alt=""/>
 				<div className="project-text-box">
+					<h2 className="project-title">Crown Clothing</h2>
 					<div className="project-text">
-						ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-	 					ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+						A fully realized e-commerce React app with Firebase authorization and data storage, 
+						and redux for state management. Utilizes local storage for session persistence and React
+						Router for navigation.
  					</div>
  					<ProjectButton />
 				</div>
 			</div>
 		</div>
 		<div className="project-container">
-			<h2 className="project-title">Hangman</h2>
-			<div className="pic-and-text">
-				<img className="project-pic" src={HangmanPic} alt=""/>
-				<div className="project-text-box">
-					<div className="project-text">
-						ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-	 					ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
- 					</div>
- 					<ProjectButton />
-				</div>
-			</div>
-			
-		</div>
-		<div className="project-container">
-			<h2 className="project-title">Face Finder</h2>
 			<div className="pic-and-text">
 				<img className="project-pic" src={SmartbrainPic} alt=""/>
 				<div className="project-text-box">
+					<h2 className="project-title">Face Finder</h2>
 					<div className="project-text">
-						ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-		 				ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+						A no-frills React app that detects faces in any image url given by the user using Clarifai's 
+						API, while recording and displaying a user's score. Utilizes a PostgreSQL database, server
+						written with Knex.js. 
 	 				</div>
 	 				<ProjectButton />
+				</div>
+			</div>
+		</div>
+		<div className="project-container">
+			<div className="pic-and-text">
+				<img className="project-pic" src={HangmanPic} alt=""/>
+				<div className="project-text-box">
+					<h2 className="project-title">Hangman</h2>
+					<div className="project-text">
+						A single-page game of hangman built with Vanilla JS and JQuery. Features extensive and dynamic
+						DOM manipulation.
+ 					</div>
+ 					<ProjectButton />
 				</div>
 			</div>
 		</div>

@@ -17,7 +17,7 @@ class App extends Component {
 	constructor() {
 		super()
 		this.state = {
-			route: 'contact',
+			route: 'projects',
 			// routeItem: "hohoho"
 		}
 	}

@@ -275,17 +275,6 @@ class Skills extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="skills-wrapper">
-					<img className="skill-symbol-back" src={CodingSymbol} alt="" />
-					<img className="skill-symbol " src={CodingSymbol} alt="" />
-					
-					<div className="skill-title-box-back">
-						<h1 className="skill-title">Skills</h1>
-					</div>
-					<div className="skill-title-box">
-						<h1 className="skill-title">Skills</h1>
-					</div>
-				</div>
 			</div>
 		)
 	}
