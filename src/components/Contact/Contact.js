@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import "./contact.styles.css"
 
 import ContactForm from "../contact-form/contact-form.component"

@@ -18,12 +18,22 @@ class Navigation extends React.Component {
 		window.onscroll = function() {scrollFunction()};
 
 		function scrollFunction() {
-		  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+		  if (document.documentElement.scrollTop > 0) {
 		    document.getElementById("nav-wrapper").style.borderBottom = "2px solid rgb(0,0,0, 0.2)";
+		  	// console.log(document.body.scrollTop)
+		  	// console.log(document.documentElement.scrollTop)
 
-		  } 
+		  }
 		  else {
 		    document.getElementById("nav-wrapper").style.borderBottom = "0";
+		  }
+
+		  if (document.documentElement.scrollTop > 200) {
+		  	document.getElementById("nav-home").style.fontSize = "3em";
+		  	// console.log(document.documentElement.scrollTop)
+		  }
+		  else {
+		  	document.getElementById("nav-home").style.fontSize = "5em";
 		  }
 		}
 
@@ -82,15 +92,18 @@ class Navigation extends React.Component {
 	render () {
 		const { onRouteChange } = this.props;
 		return (
-		<div className='NavWrapper' style={{'textAlign': 'center'}}>
+		<div className='nav-container'>
 			<div id="selection-line"></div>
-			<nav className='' id='nav-wrapper' style={{"borderBottom": "0px solid red", "transition": "0.2s ease"}}>
-				<p className="NavItem" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': 'auto', 'marginLeft': '0px', 'fontSize': '2em'}}>Home</p>
-				<p className="NavItem" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
-				<p className="NavItem" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
-				<p className="NavItem" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
+			<nav className='nav-items' id='nav-wrapper' style={{"borderBottom": "0px solid red", "transition": "0.2s ease"}}>
+				<div className="home-box">
+					<p className="nav-item" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Home</p>
+				</div>
+				<div className="menu-box">
+					<p className="nav-item" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
+					<p className="nav-item" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
+					<p className="nav-item" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
+				</div>
 			</nav>
-			<div id="menu-spacer" style={{'height': "55px"}}></div>
 		</div>
 	);
 	}	
@@ -111,4 +124,4 @@ class Navigation extends React.Component {
 // }
 
 
-export default Navigation
+export default Navigation;

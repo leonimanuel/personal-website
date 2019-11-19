@@ -1,9 +1,30 @@
-body {
-/*	background-image: url(paper-texture.jpg);
-	background-size: cover;*/
+.home-page {
+	width: 100%;
+	min-height: 100vh;
+	border: 5px solid red;
+	position: relative;
+
+	background-color: lightcoral;
 }
 
+.profile-pic {
+	border: 1px solid black;
+	border-radius: 150px;
+	height: 300px;
+}
 
+.home-content {
+	margin-top: 100px;
+}
+
+.home-text {
+	font-size: 10em;
+	min-width: 500px;
+	max-width: 750px;
+	font-family: 'Bebas Neue', cursive;
+	/*display: none;*/
+
+}
 /*#home-title {
 	margin-top: 20px;
 	font-size: 2em;

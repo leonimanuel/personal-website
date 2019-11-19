@@ -1,40 +1,41 @@
-nav {
+.nav-container {
 	position: fixed;
-/*	top: -50px;
-	padding-top: 50px;*/
-	/*overflow: hidden;*/
-	/*padding-top: 50px;*/
-	/*top: 50px;*/
-	/*padding: 0 2%;*/
+	top: 0;
 	width: 100%;
-	align-items: flex-end;
-	display: flex;
-	justify-content: flex-end;
+	
 	background-color: snow;
+	/*opacity: 0.3;*/
+	/*border: 5px solid green;*/
+	z-index: 5;
+}
+
+.nav-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin: 0 10px;
 	color: black;
-	/*border: 1px solid black;*/
-	z-index: 2;
+	/*border: 3px solid blue;*/
 }
 
-.NavItem {
-	/*color: black;*/
-	margin: 0; /* super important for some reason */
+.nav-item {
+	display: inline-block;
+	margin: 0;
+	/*margin-right: 10px;*/
 	padding: 0 10px;
-	font-size: 1.2em;
+	font-size: 2em;
 	cursor: pointer;
-	/*transition: all 1s ease;*/
+};
+
+.home-box {
+	/*border: 2px solid red;*/
 }
 
-/*#nav-skills::after {
-	width: 50px;
-}*/
+.menu-box {
+	/*border: 2px solid red;*/
+}
 
-
-/*#hover-line {
-  height: 0px;
-  border: 1px solid;
-  position: fixed;
-  top: 50px;
-  left: 20px;
-  transition: 0.2s ease;
-}*/
+#nav-home {
+	font-size: 5em;
+	/*line-height: 90px;*/
+}

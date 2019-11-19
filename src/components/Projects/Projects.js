@@ -1,5 +1,11 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
 import './Projects2.css'
+
+import ScrollDownButton from "../scroll-down-button/scroll-down-button.component"
+
 
 import ProjectButton from "../project-button/project-button.component"
 import CrownClothingPic from "./crown-clothing-pic.png"
@@ -13,8 +19,8 @@ import SmartbrainPic from './smart-brain-pic.png'
 
 const Projects = (onRouteChange) => {
 	return (
-	<div className="projects-wrapper">
-	<h1 className="projects-heading">PROJECTS</h1>
+	<div className="projects-page">
+		<h1 className="projects-heading">PROJECTS</h1>
 		<div className="project-container">
 			<div className="pic-and-text">
 				<img className="project-pic" src={CrownClothingPic} alt=""/>
@@ -56,6 +62,14 @@ const Projects = (onRouteChange) => {
 				</div>
 			</div>
 		</div>
+		<Link activeClass="active"
+      to="home-page"
+      spy={true}
+      smooth={true}
+      offset={0}
+      duration={500}>
+			<ScrollDownButton />
+    </Link>
 	</div>
 	)
 };

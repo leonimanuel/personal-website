@@ -1,4 +1,5 @@
-.projects-wrapper {
+.projects-page {
+	min-height: 100vh;
 /*	display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 20px;
@@ -6,7 +7,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /*border: 2px solid green;*/
+  position: relative;
+
+  /*border: 5px solid purple;*/
+  background-color: lightgreen;
 }
 
 .projects-heading {

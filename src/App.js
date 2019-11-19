@@ -34,44 +34,32 @@ class App extends Component {
   render() {
   	const { route } = this.state; 
   	return (
-	    <div className="App">
-	    	<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
-	    	<DarkMode />
-	    	{ route === 'home'
-	    	? <Home onRouteChange={this.onRouteChange} />
-	    	: (route === 'skills')
-    		? <Skills onRouteChange={this.onRouteChange} />
-        	: (route === 'projects')
-    		? <Projects onRouteChange={this.onRouteChange} />
-        	: (route === 'contact')
-    		? <Contact onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
-        	: <WrongRoute />
-	    	}
-	    </div>
+			<div className="App">
+				<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
+				<Home onRouteChange={this.onRouteChange} />
+				<Skills id="skills-component" onRouteChange={this.onRouteChange} />
+				<Projects onRouteChange={this.onRouteChange} />
+				<Contact onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
+				<DarkMode />
+			</div>
 	  );
-  }
-	  
+  } 
 }
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
+
+	    // <div className="App">
+	    // 	<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
+	    // 	<DarkMode />
+	    	// { route === 'home'
+	    	// ? <Home onRouteChange={this.onRouteChange} />
+	    	// : (route === 'skills')
+    		// ? <Skills onRouteChange={this.onRouteChange} />
+      //   	: (route === 'projects')
+    		// ? <Projects onRouteChange={this.onRouteChange} />
+      //   	: (route === 'contact')
+    	// 	? <Contact onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
+     //    	: <WrongRoute />
+	    // 	}
+	    // </div>

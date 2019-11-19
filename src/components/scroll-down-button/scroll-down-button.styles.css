@@ -1,0 +1,13 @@
+.scroll-down-button {
+	width: 100px;
+	height: 50px;
+	background-color: orange;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 50px;
+	z-index: 2;
+	/*text-align: center;*/
+}
