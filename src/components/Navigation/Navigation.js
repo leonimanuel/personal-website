@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
 import './Navigation.css';
 
 
@@ -96,12 +99,40 @@ class Navigation extends React.Component {
 			<div id="selection-line"></div>
 			<nav className='nav-items' id='nav-wrapper' style={{"borderBottom": "0px solid red", "transition": "0.2s ease"}}>
 				<div className="home-box">
-					<p className="nav-item" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Home</p>
+					<Link activeClass="active"
+				      to="home-page"
+				      spy={true}
+				      smooth={true}
+				      offset={0}
+				      duration={500}>
+						<p className="nav-item" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Home</p>
+					</Link>
 				</div>
 				<div className="menu-box">
-					<p className="nav-item" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
-					<p className="nav-item" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
-					<p className="nav-item" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
+					<Link activeClass="active"
+				      to="skills-page"
+				      spy={true}
+				      smooth={true}
+				      offset={0}
+				      duration={500}>
+						<p className="nav-item" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
+					</Link>
+					<Link activeClass="active"
+				      to="projects-page"
+				      spy={true}
+				      smooth={true}
+				      offset={0}
+				      duration={500}>
+						<p className="nav-item" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
+					</Link>
+					<Link activeClass="active"
+				      to="contact-page"
+				      spy={true}
+				      smooth={true}
+				      offset={0}
+				      duration={500}>
+						<p className="nav-item" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
+					</Link>
 				</div>
 			</nav>
 		</div>

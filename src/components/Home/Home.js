@@ -20,7 +20,7 @@ const Home = (onRouteChange) => {
 				</div>
 				</div>
 					<Link activeClass="active"
-            to="skills-page"
+            to="home-page"
             spy={true}
             smooth={true}
             offset={0}
