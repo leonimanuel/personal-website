@@ -120,6 +120,14 @@ class Navigation extends React.Component {
 				</div>
 				<div className="menu-box">
 					<Link activeClass="active"
+				      to="about-page"
+				      spy={true}
+				      smooth={true}
+				      offset={0}
+				      duration={500}>
+						<p className="nav-item" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>About</p>
+					</Link>
+					<Link activeClass="active"
 				      to="skills-page"
 				      spy={true}
 				      smooth={true}
