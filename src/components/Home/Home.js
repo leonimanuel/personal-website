@@ -18,14 +18,14 @@ const Home = (onRouteChange) => {
 					<div className="home-text" style={{"textAlign": "left"}}>
 						Is that a lemon tree?
 					</div>
-					<img className="clarice" src={Claireon} alt="" width= "750px"/>
+					<img className="clarice" src={Claireon} alt=""/>
 				</div>
 				</div>
 					<Link activeClass="active"
             to="about-page"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-60}
             duration={500}>
 						<ScrollDownButton />
           </Link>

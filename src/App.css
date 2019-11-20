@@ -8,10 +8,13 @@ div {
 }
 
 .App {
+  /*width: 500px;*/
   text-align: center;
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Muli', sans-serif;
+  position: relative;
   /*background-color: red;*/
+  /*border: 5px solid blue;*/
 }
 
 .App-logo {
@@ -33,7 +36,15 @@ div {
   color: #09d3ac;
 }
 
+.app-container {
+  position: absolute;
+  left: 0%;
+  transition: 0.2s ease;
+  border: 3px solid purple;
+}
 
 /*#dark-mode-button {
   background-color: red;
 }*/
+
+

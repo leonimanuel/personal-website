@@ -81,7 +81,7 @@ const Projects = (onRouteChange) => {
       to="contact-page"
       spy={true}
       smooth={true}
-      offset={0}
+      offset={-60}
       duration={500}>
 			<ScrollDownButton />
     </Link>

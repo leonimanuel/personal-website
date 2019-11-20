@@ -341,7 +341,7 @@ class Skills extends React.Component {
             to="projects-page"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-60}
             duration={500}>
 						<ScrollDownButton />
           </Link>

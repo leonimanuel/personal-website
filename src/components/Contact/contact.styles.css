@@ -1,5 +1,5 @@
 .contact-page {
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 
 	min-height: 100vh;
 	width: 100%;
@@ -10,4 +10,12 @@
 .form-and-icons {
 	display: flex;
 	justify-content: center;
+	/*border: 5px solid grey;*/
+}
+
+@media only screen and (max-width: 600px) {
+	.form-and-icons {
+		flex-direction: column;
+		align-items: center;
+	}
 }

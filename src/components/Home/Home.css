@@ -1,9 +1,9 @@
 .home-page {
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 
 	width: 100%;
 	min-height: 100vh;
-	border: 5px solid red;
+	/*border: 5px solid red;*/
 	position: relative;
 
 	background-color: lightcoral;
@@ -21,7 +21,7 @@
 
 .home-text {
 	font-size: 10em;
-	min-width: 500px;
+	/*min-width: 500px;*/
 	max-width: 750px;
 	font-family: 'Bebas Neue', cursive;
 	/*display: none;*/
@@ -33,9 +33,11 @@
 }*/
 
 .clarice {
+	width: 750px;
 	filter: blur(50px);
 	border-radius: 25px;
 	transition: 1s;
+	display: none;
 }
 
 .clarice:hover {

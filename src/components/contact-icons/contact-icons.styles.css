@@ -25,3 +25,10 @@
 #phone-icon {
 	/*margin-top: 90px;*/
 }
+
+@media only screen and (max-width: 600px) {
+	.icons-container {
+		flex-direction: row;
+		/*align-items: center;*/
+	}
+}

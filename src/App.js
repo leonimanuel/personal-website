@@ -36,13 +36,17 @@ class App extends Component {
   	const { route } = this.state; 
   	return (
 			<div className="App">
+			<div className="app-container" id="app-container">
 				<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
+				
 				<Home onRouteChange={this.onRouteChange} />
 				<About />
 				<Skills id="skills-component" onRouteChange={this.onRouteChange} />
 				<Projects onRouteChange={this.onRouteChange} />
 				<Contact onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
 				{/* <DarkMode /> */}
+			</div>
+				
 			</div>
 	  );
   } 

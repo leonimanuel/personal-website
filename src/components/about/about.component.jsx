@@ -18,7 +18,6 @@ const About = () => (
 	<div className="about-page">
 		<h1 className="about-header">About Me</h1>
 		<div className="about-content">
-		
 			<div className="about-pic-and-text">
 				<img className="profile-pic" src={ProfilePic} alt="" width="300" height=""/>
 				<div className="about-text">
@@ -59,7 +58,7 @@ const About = () => (
       to="skills-page"
       spy={true}
       smooth={true}
-      offset={0}
+      offset={-60}
       duration={500}>
 			<ScrollDownButton />
     </Link>
