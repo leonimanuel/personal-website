@@ -3,12 +3,12 @@
 	width: 100%;
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
+	/*left: 0;*/
+	/*right: 0;*/
 	background-color: snow;
-	opacity: 0.3;
+	opacity: 0.9;
 	border: 5px solid green;
-	z-index: 2;
+	z-index: 5;
 }
 
 .nav-items {
@@ -57,34 +57,32 @@
 	display: none;
 }
 
-@media only screen and (max-width: 600px) {
-/*	.nav-container {
-		background-color: blue;
-	}*/
-
-	.menu-box {
-		/*float: none;*/
+@media only screen and (max-width: 1200px) {
+/*	.menu-box {
 		position: fixed;
 		top: 0;
 		right: 0;
-		display: none;
+		display: flex;
 		flex-direction: column;
 		text-align: left;
 		height: 100%;
 		background-color: navy;
 	
-		/*transition: 1s ease;*/
 		z-index: -50;
+	}*/
 
-
+	.app-container.shift {
+		/*animation: app-shift 1s;*/
+		left: -200px;
 	}
+
 	.navbar-icon {display: block;}
 
-	.nav-container.responsive {position: relative;}
+	/*.nav-container.responsive {position: relative;}
 	.nav-container.responsive .navbar-icon {
-		/*position: absolute;
+		position: absolute;
 		right: 0;
-		top: 0;*/
+		top: 0;
 	}
 	
 	@keyframes app-shift {
@@ -94,12 +92,9 @@
 		to {
 			left:-20%;
 		}
-	}
+	}*/
 
-	.app-container.shift {
-		/*animation: app-shift 1s;*/
-		left: -20%;
-	}
+	
 }
 
 

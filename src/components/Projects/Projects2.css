@@ -1,6 +1,8 @@
 .projects-page {
 	/*padding-top: 60px;*/
+	width: 100%;
 	min-height: 100vh;
+	position: relative;
 /*	display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 20px;
@@ -9,7 +11,8 @@
 
   /*border: 5px solid purple;*/
   /*background-color: lightgreen;*/
-  background-color: slategrey;
+  background-color: grey;
+  /*z-index: 1;*/
 }
 
 .projects-wrapper {
@@ -67,7 +70,7 @@
   background-color: rgb(25,25,112, 0.9);
   /*visibility: hidden;*/
   opacity: 0;
-  z-index: 0;
+  /*z-index: 0;*/
   border-radius: 20px;
   transition: opacity 0.3s;
 }

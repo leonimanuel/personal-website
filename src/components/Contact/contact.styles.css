@@ -1,6 +1,6 @@
 .contact-page {
 	/*padding-top: 60px;*/
-
+	position: relative;
 	min-height: 100vh;
 	width: 100%;
 	/*border: 5px solid yellow;*/

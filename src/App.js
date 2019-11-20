@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import DarkMode from './components/DarkMode/DarkMode'
 import Navigation from './components/Navigation/Navigation';
+import SmallNav from './components/nav-menu/nav-menu.component';
 import './App.css'
 import Skills from './components/Skills/Skills';
 import WrongRoute from './components/WrongRoute/WrongRoute';
@@ -37,6 +38,7 @@ class App extends Component {
   	return (
 			<div className="App">
 			<div className="app-container" id="app-container">
+				<SmallNav onRouteChange={this.onRouteChange} />
 				<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
 				
 				<Home onRouteChange={this.onRouteChange} />
