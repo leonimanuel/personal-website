@@ -4,13 +4,14 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import './Projects2.css'
 
-import ScrollDownButton from "../scroll-down-button/scroll-down-button.component"
+import ScrollDownButton from "../scroll-down-button/scroll-down-button.component";
 
 
-import ProjectButton from "../project-button/project-button.component"
-import CrownClothingPic from "./crown-clothing-pic.png"
-import HangmanPic from './hangman-pic.png'
-import SmartbrainPic from './smart-brain-pic.png'
+import ProjectButton from "../project-button/project-button.component";
+import CrownClothingPic from "./crown-clothing-pic.png";
+import HangmanPic from "./hangman-pic.png";
+import SmartbrainPic from "./smart-brain-pic.png";
+import SquelchifyPic from "./squelchify-icon.png"
 // import AtlasPic from './atlas-pic.png'
 // import PersonalWebsitePic from './personal-website-pic.png'
 
@@ -20,50 +21,64 @@ import SmartbrainPic from './smart-brain-pic.png'
 const Projects = (onRouteChange) => {
 	return (
 	<div className="projects-page">
-		<h1 className="projects-heading">PROJECTS</h1>
-		<div className="project-container">
-			<div className="pic-and-text">
-				<img className="project-pic" src={CrownClothingPic} alt=""/>
-				<div className="project-text-box">
-					<h2 className="project-title">Crown Clothing</h2>
-					<div className="project-text">
-						A fully realized e-commerce React app with Firebase authorization and data storage, 
-						and redux for state management. Utilizes local storage for session persistence and React
-						Router for navigation.
- 					</div>
- 					<ProjectButton />
+		<div className="projects-wrapper">
+			<h1 className="projects-heading">PROJECTS</h1>
+			<div className="project-container">
+				<div className="pic-and-text">
+					<img className="project-pic" src={CrownClothingPic} alt=""/>
+					<div className="project-text-box">
+						<h2 className="project-title">Crown Clothing</h2>
+						<div className="project-text">
+							A fully realized e-commerce React app with Firebase authorization and data storage, 
+							and redux for state management. Utilizes local storage for session persistence and React
+							Router for navigation.
+	 					</div>
+	 					<ProjectButton />
+					</div>
 				</div>
 			</div>
-		</div>
-		<div className="project-container">
-			<div className="pic-and-text">
-				<img className="project-pic" src={SmartbrainPic} alt=""/>
-				<div className="project-text-box">
-					<h2 className="project-title">Face Finder</h2>
-					<div className="project-text">
-						A no-frills React app that detects faces in any image url given by the user using Clarifai's 
-						API, while recording and displaying a user's score. Utilizes a PostgreSQL database, server
-						written with Knex.js. 
-	 				</div>
-	 				<ProjectButton />
+			<div className="project-container">
+				<div className="pic-and-text">
+					<img className="project-pic" src={SmartbrainPic} alt=""/>
+					<div className="project-text-box">
+						<h2 className="project-title">Face Finder</h2>
+						<div className="project-text">
+							A no-frills React app that detects faces in any image url given by the user using Clarifai's 
+							API, while recording and displaying a user's score. Utilizes a PostgreSQL database, server
+							written with Knex.js. 
+		 				</div>
+		 				<ProjectButton />
+					</div>
 				</div>
 			</div>
-		</div>
-		<div className="project-container">
-			<div className="pic-and-text">
-				<img className="project-pic" src={HangmanPic} alt=""/>
-				<div className="project-text-box">
-					<h2 className="project-title">Hangman</h2>
-					<div className="project-text">
-						A single-page game of hangman built with Vanilla JS and JQuery. Features extensive and dynamic
-						DOM manipulation.
- 					</div>
- 					<ProjectButton />
+			<div className="project-container">
+				<div className="pic-and-text">
+					<img className="project-pic" src={HangmanPic} alt=""/>
+					<div className="project-text-box">
+						<h2 className="project-title">Hangman</h2>
+						<div className="project-text">
+							A single-page game of hangman built with Vanilla JS and JQuery. Features extensive and dynamic
+							DOM manipulation.
+	 					</div>
+	 					<ProjectButton />
+					</div>
+				</div>
+			</div>
+			<div className="project-container">
+				<div className="pic-and-text">
+					<img className="project-pic" src={SquelchifyPic} alt=""/>
+					<div className="project-text-box">
+						<h2 className="project-title">SQUELFCHIFFY</h2>
+						<div className="project-text">
+							MY FUCKING WEBSITE
+	 					</div>
+	 					<ProjectButton />
+					</div>
 				</div>
 			</div>
 		</div>
 		<Link activeClass="active"
-      to="home-page"
+      to="contact-page"
       spy={true}
       smooth={true}
       offset={0}

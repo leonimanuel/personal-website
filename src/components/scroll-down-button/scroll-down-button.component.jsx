@@ -1,6 +1,7 @@
 import React from "react";
 import "./scroll-down-button.styles.css";
 
+import DownArrow from "./down-arrow-icon.svg";
 
 
 const ScrollDownButton = () => {
@@ -9,7 +10,7 @@ const ScrollDownButton = () => {
 // 	}
 	return (
 		<div className="scroll-down-button">
-			SCROLL DOWN
+			<img src={DownArrow} alt=""/>
 		</div>
 	);
 };

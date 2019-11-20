@@ -11,44 +11,54 @@ class Navigation extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			selectedItem: "",
+			selectedItem: "red",
 		}
 	}
 
 
 
 	componentDidMount() {
-		window.onscroll = function() {scrollFunction()};
+		this.setState({selectedItem: document.getElementById("nav-home")});
+		
+		
 
+		// let hoverLine = document.createElement("div");
+		// hoverLine.setAttribute("id", "hover-line")
+		// document.getElementById("nav-wrapper").appendChild(hoverLine)
+		// hoverLine.setAttribute("style", "height: 0; border-bottom: 2px solid; position: fixed; transition: 0.2s ease");
+		let hoverLine = document.getElementById("hover-line")
+		hoverLine.style.top = `${document.getElementById("nav-home").getBoundingClientRect().bottom}px`
+		hoverLine.style.left = `${document.getElementById("nav-home").getBoundingClientRect().left}px`;
+		hoverLine.style.width = `${document.getElementById("nav-home").clientWidth}px`;
+
+		window.onscroll = function() {scrollFunction()};
 		function scrollFunction() {
 		  if (document.documentElement.scrollTop > 0) {
-		    document.getElementById("nav-wrapper").style.borderBottom = "2px solid rgb(0,0,0, 0.2)";
+		    document.getElementById("nav-container").style.borderBottom = "2px solid rgb(0,0,0, 0.2)";
 		  	// console.log(document.body.scrollTop)
 		  	// console.log(document.documentElement.scrollTop)
-
 		  }
 		  else {
 		    document.getElementById("nav-wrapper").style.borderBottom = "0";
 		  }
 
+
 		  if (document.documentElement.scrollTop > 200) {
 		  	document.getElementById("nav-home").style.fontSize = "3em";
+				// document.getElementById('hover-line').style.top = 54 + "px";
+		  	// hoverLine.style.top = `${document.getElementById("nav-home").getBoundingClientRect().bottom}px`
 		  	// console.log(document.documentElement.scrollTop)
+
 		  }
 		  else {
 		  	document.getElementById("nav-home").style.fontSize = "5em";
+		  	// document.getElementById('hover-line').style.top = 92 + "px";
 		  }
+
+		  let hoverLine = document.getElementById("hover-line")
+			hoverLine.style.top = `${document.getElementById("nav-home").getBoundingClientRect().bottom}px`
+
 		}
-
-		this.setState({selectedItem: document.getElementById("nav-home")});
-		let hoverLine = document.createElement("div");
-		hoverLine.setAttribute("id", "hover-line")
-		document.getElementById("nav-wrapper").appendChild(hoverLine)
-		hoverLine.setAttribute("style", "height: 0; border-bottom: 2px solid; position: fixed; transition: 0.2s ease");
-		hoverLine.style.top = `${document.getElementById("nav-home").getBoundingClientRect().bottom}px`
-		hoverLine.style.left = `${document.getElementById("nav-home").getBoundingClientRect().left}px`;
-		hoverLine.style.width = `${document.getElementById("nav-home").clientWidth}px`;
-
 	}	
 
 	slideHover = () => {
@@ -95,7 +105,7 @@ class Navigation extends React.Component {
 	render () {
 		const { onRouteChange } = this.props;
 		return (
-		<div className='nav-container'>
+		<div className='nav-container' id="nav-container">
 			<div id="selection-line"></div>
 			<nav className='nav-items' id='nav-wrapper' style={{"borderBottom": "0px solid red", "transition": "0.2s ease"}}>
 				<div className="home-box">
@@ -135,6 +145,7 @@ class Navigation extends React.Component {
 					</Link>
 				</div>
 			</nav>
+			<div id="hover-line"></div>
 		</div>
 	);
 	}	

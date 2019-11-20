@@ -5,6 +5,7 @@ import './App.css'
 import Skills from './components/Skills/Skills';
 import WrongRoute from './components/WrongRoute/WrongRoute';
 import Home from './components/Home/Home';
+import About from "./components/about/about.component"
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 
@@ -37,10 +38,11 @@ class App extends Component {
 			<div className="App">
 				<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
 				<Home onRouteChange={this.onRouteChange} />
+				<About />
 				<Skills id="skills-component" onRouteChange={this.onRouteChange} />
 				<Projects onRouteChange={this.onRouteChange} />
 				<Contact onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
-				<DarkMode />
+				{/* <DarkMode /> */}
 			</div>
 	  );
   } 
