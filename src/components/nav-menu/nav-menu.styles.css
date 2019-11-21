@@ -1,6 +1,7 @@
 .small-nav-items{
+		width: 100px;
 		height: 100vh;
-		font-size: 50px;
+		font-size: 20px;
 		color: white;
 		/*float: none;*/
 		position: fixed;
@@ -13,5 +14,9 @@
 		background-color: navy;
 	
 		/*transition: 1s ease;*/
-		z-index: 0;
+		/*z-index: 0;*/
+	}
+
+	.small-nav-item {
+		cursor: pointer;
 	}

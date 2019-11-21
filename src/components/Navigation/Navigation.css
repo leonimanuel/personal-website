@@ -73,10 +73,11 @@
 
 	.app-container.shift {
 		/*animation: app-shift 1s;*/
-		left: -200px;
+		left: -100px;
 	}
 
 	.navbar-icon {display: block;}
+	.menu-box {display: none;}
 
 	/*.nav-container.responsive {position: relative;}
 	.nav-container.responsive .navbar-icon {

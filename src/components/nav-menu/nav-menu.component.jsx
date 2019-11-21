@@ -4,6 +4,10 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import "./nav-menu.styles.css"
 
 const SmallNav = () => {
+	const snapMenuBack = () => {
+		document.getElementById("app-container").className = "app-container";
+	};
+
 	return ( 
 	<nav className="small-nav-items" id="small-nav-wrapper" style={{"borderBottom": "0px solid red", "transition": "0.2s ease"}}>
 				<div className="small-home-box">
@@ -13,7 +17,7 @@ const SmallNav = () => {
 				      smooth={true}
 				      offset={-60}
 				      duration={500}>
-						<p className="small-nav-item" id="small-nav-home">Home</p>
+						<p className="small-nav-item" id="small-nav-home" onClick={() => {snapMenuBack()}}>Home</p>
 					</Link>
 				</div>
 				<div className="small-menu-box">
@@ -23,7 +27,7 @@ const SmallNav = () => {
 				      smooth={true}
 				      offset={-60}
 				      duration={500}>
-						<p className="small-nav-item" id="small-nav-skills">About</p>
+						<p className="small-nav-item" id="small-nav-skills" onClick={() => {snapMenuBack()}}>About</p>
 					</Link>
 					<Link activeClass="active"
 				      to="skills-page"
@@ -31,7 +35,7 @@ const SmallNav = () => {
 				      smooth={true}
 				      offset={-60}
 				      duration={500}>
-						<p className="small-nav-item" id="small-nav-skills">Skills</p>
+						<p className="small-nav-item" id="small-nav-skills" onClick={() => {snapMenuBack()}}>Skills</p>
 					</Link>
 					<Link activeClass="active"
 				      to="projects-page"
@@ -39,7 +43,7 @@ const SmallNav = () => {
 				      smooth={true}
 				      offset={-60}
 				      duration={500}>
-						<p className="small-nav-item" id="small-nav-projects">Projects</p>
+						<p className="small-nav-item" id="small-nav-projects" onClick={() => {snapMenuBack()}}>Projects</p>
 					</Link>
 					<Link activeClass="active"
 				      to="contact-page"
@@ -47,10 +51,9 @@ const SmallNav = () => {
 				      smooth={true}
 				      offset={-60}
 				      duration={500}>
-						<p className="small-nav-item" id="small-nav-contact">Contact</p>
+						<p className="small-nav-item" id="small-nav-contact" onClick={() => {snapMenuBack()}}>Contact</p>
 					</Link>
 				</div>
-				<p className="small-nav-item navbar-icon">BOOP</p>
 			</nav>
 	)
 };

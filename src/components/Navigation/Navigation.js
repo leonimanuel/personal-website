@@ -172,7 +172,7 @@ class Navigation extends React.Component {
 						<p className="nav-item" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
 					</Link>
 				</div>
-				<p className="nav-item navbar-icon" onClick={this.shrinkMenu}>BOOOoooooOP</p>
+				<p className="nav-item navbar-icon" onClick={this.shrinkMenu}>BOOP</p>
 			</nav>
 			<div id="hover-line"></div>
 		</div>
