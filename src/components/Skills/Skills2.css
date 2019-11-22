@@ -225,3 +225,7 @@
     writing-mode: horizontal-tb;
   }
 }
+
+#testing-wrapper {
+	display: none;
+}
