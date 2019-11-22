@@ -12,14 +12,23 @@ class Navigation extends React.Component {
 		super(props);
 		this.state = {
 			selectedItem: "red",
+
 		}
 	}
 
-
-
 	componentDidMount() {
-		this.setState({selectedItem: document.getElementById("nav-home")});
 		
+		this.setState({selectedItem: document.getElementById("nav-home")});
+		// console.log(document.documentElement.clientWidth)
+		// if (document.documentElement.clientWidth < 650) {
+		// 	let i = document.getElementsByTagName("Link")
+		// 	console.log(i)
+		// }
+
+
+		console.log(document.getElementById("nav-home").clientHeight)
+
+
 		
 
 		// let hoverLine = document.createElement("div");
@@ -44,14 +53,18 @@ class Navigation extends React.Component {
 
 
 		  if (document.documentElement.scrollTop > 200) {
-		  	document.getElementById("nav-home").style.fontSize = "3em";
+		  	document.getElementById("nav-container").style.height = "7vh";
+		  	document.getElementById("nav-home").style.fontSize = "6vh"
+		  	
 				// document.getElementById('hover-line').style.top = 54 + "px";
 		  	// hoverLine.style.top = `${document.getElementById("nav-home").getBoundingClientRect().bottom}px`
 		  	// console.log(document.documentElement.scrollTop)
 
 		  }
 		  else {
-		  	document.getElementById("nav-home").style.fontSize = "5em";
+		  	document.getElementById("nav-container").style.height = "10vh";
+		  	document.getElementById("nav-home").style.fontSize = "9vh"
+
 		  	// document.getElementById('hover-line').style.top = 92 + "px";
 		  }
 
@@ -105,6 +118,7 @@ class Navigation extends React.Component {
 	shrinkMenu = () => {
 		var x = document.getElementById("app-container");
 		console.log(x)
+
 	  if (x.className === "app-container") {
 	    x.className += " shift";
 	    console.log(123)
@@ -122,8 +136,12 @@ class Navigation extends React.Component {
 	 //  }	
 	}
 
+	printOffsetVal = () => {
+		console.log(this.props.offsetVal)
+	}
+
 	render () {
-		const { onRouteChange } = this.props;
+		const { onRouteChange, offsetVal } = this.props;
 		return (
 		<div className='nav-container' id="nav-container">
 			<div id="selection-line"></div>
@@ -133,7 +151,7 @@ class Navigation extends React.Component {
 				      to="home-page"
 				      spy={true}
 				      smooth={true}
-				      offset={-60}
+				      offset={offsetVal}
 				      duration={500}>
 						<p className="nav-item" id="nav-home" onClick={() => { onRouteChange('home'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Home</p>
 					</Link>
@@ -143,7 +161,7 @@ class Navigation extends React.Component {
 				      to="about-page"
 				      spy={true}
 				      smooth={true}
-				      offset={-60}
+				      offset={offsetVal}
 				      duration={500}>
 						<p className="nav-item" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>About</p>
 					</Link>
@@ -151,23 +169,24 @@ class Navigation extends React.Component {
 				      to="skills-page"
 				      spy={true}
 				      smooth={true}
-				      offset={-60}
+				      offset={offsetVal}
 				      duration={500}>
 						<p className="nav-item" id="nav-skills" onClick={() => { onRouteChange('skills'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Skills</p>
 					</Link>
-					<Link activeClass="active"
+					<Link id="nav-proj-link" activeClass="active"
 				      to="projects-page"
 				      spy={true}
 				      smooth={true}
-				      offset={-60}
-				      duration={500}>
+				      offset={offsetVal}
+				      duration={500} 
+				      onClick={this.printOffsetVal}>
 						<p className="nav-item" id="nav-projects" onClick={() => { onRouteChange('projects'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack}>Projects</p>
 					</Link>
 					<Link activeClass="active"
 				      to="contact-page"
 				      spy={true}
 				      smooth={true}
-				      offset={-60}
+				      offset={offsetVal}
 				      duration={500}>
 						<p className="nav-item" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
 					</Link>

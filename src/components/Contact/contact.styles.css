@@ -1,16 +1,32 @@
 .contact-page {
 	/*padding-top: 60px;*/
 	position: relative;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 	width: 100%;
 	/*border: 5px solid yellow;*/
-	background-color: thistle;
+	background-color: lavender;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-header {
+	 /*font-size: 50px;
+	 margin-top: 50px;
+	 border: 2px solid red;*/
+	position: absolute;
+	left: 3%;
+	height: 100%;
+	font-size: 8em;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg) ;
+	z-index: 0;
 }
 
 .form-and-icons {
 	display: flex;
 	justify-content: center;
 	/*border: 5px solid grey;*/
+	z-index: 1;
 }
 
 @media only screen and (max-width: 600px) {

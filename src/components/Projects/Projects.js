@@ -11,18 +11,18 @@ import ProjectButton from "../project-button/project-button.component";
 import CrownClothingPic from "./crown-clothing-pic.png";
 import HangmanPic from "./hangman-pic.png";
 import SmartbrainPic from "./smart-brain-pic.png";
-import SquelchifyPic from "./squelchify-icon.png"
+import SquelchifyPic from "./codemonkey-pic.png"
 // import AtlasPic from './atlas-pic.png'
 // import PersonalWebsitePic from './personal-website-pic.png'
 
 			// <img className="project-pic proj-pic-and-text-layer" src={CrownClothingPic} alt=""/>
 
 
-const Projects = (onRouteChange) => {
+const Projects = ({onRouteChange, offsetVal}) => {
 	return (
-	<div className="projects-page">
+	<div className="projects-page page">
+		<h1 className="projects-heading page-header">PROJECTS</h1>
 		<div className="projects-wrapper">
-			<h1 className="projects-heading">PROJECTS</h1>
 			<div className="project-container">
 				<div className="pic-and-text">
 					<img className="project-pic" src={CrownClothingPic} alt=""/>
@@ -33,7 +33,9 @@ const Projects = (onRouteChange) => {
 							and redux for state management. Utilizes local storage for session persistence and React
 							Router for navigation.
 	 					</div>
-	 					<ProjectButton />
+	 					<a href="https://crown-clothing-lim.herokuapp.com/" target="_blank">
+		 					<ProjectButton />
+		 				</a>
 					</div>
 				</div>
 			</div>
@@ -47,7 +49,9 @@ const Projects = (onRouteChange) => {
 							API, while recording and displaying a user's score. Utilizes a PostgreSQL database, server
 							written with Knex.js. 
 		 				</div>
-		 				<ProjectButton />
+		 				<a href="https://smart-brain-lim.herokuapp.com/" target="_blank">
+		 					<ProjectButton />
+		 				</a>
 					</div>
 				</div>
 			</div>
@@ -60,7 +64,9 @@ const Projects = (onRouteChange) => {
 							A single-page game of hangman built with Vanilla JS and JQuery. Features extensive and dynamic
 							DOM manipulation.
 	 					</div>
-	 					<ProjectButton />
+	 					<a href="https://hangman-clean.herokuapp.com/" target="_blank">
+		 					<ProjectButton />
+		 				</a>
 					</div>
 				</div>
 			</div>
@@ -72,7 +78,14 @@ const Projects = (onRouteChange) => {
 						<div className="project-text">
 							MY FUCKING WEBSITE
 	 					</div>
-	 					<ProjectButton />
+	 					<Link activeClass="active"
+	            to="home-page"
+	            spy={true}
+	            smooth={true}
+	            offset={offsetVal}
+	            duration={500}>
+	 						<ProjectButton />
+	 					</Link>
 					</div>
 				</div>
 			</div>
@@ -81,7 +94,7 @@ const Projects = (onRouteChange) => {
       to="contact-page"
       spy={true}
       smooth={true}
-      offset={0}
+      offset={offsetVal}
       duration={500}>
 			<ScrollDownButton />
     </Link>

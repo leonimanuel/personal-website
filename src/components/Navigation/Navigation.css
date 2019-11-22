@@ -1,14 +1,15 @@
 .nav-container {
-	/*position: relative;*/
 	width: 100%;
 	position: fixed;
 	top: 0;
 	/*left: 0;*/
 	/*right: 0;*/
-	background-color: snow;
-	opacity: 0.9;
-	border: 5px solid green;
+	background-color: linen;
+	/*opacity: 0.7;*/
+	/*border: 5px solid green;*/
 	z-index: 5;
+	/*height: 10vh;*/
+	transition: 0.2s;
 }
 
 .nav-items {
@@ -21,12 +22,18 @@
 	/*border: 3px solid blue;*/
 }
 
+#nav-home {
+	font-size: 9vh;
+	/*line-height: 90px;*/
+	transition: 0.2s;
+}
+
 .nav-item {
 	display: inline-block;
 	margin: 0;
 	/*margin-right: 10px;*/
 	padding: 0 10px;
-	font-size: 2em;
+	font-size: 4vh;
 	cursor: pointer;
 };
 
@@ -38,11 +45,7 @@
 	/*border: 2px solid red;*/
 }
 
-#nav-home {
-	font-size: 5em;
-	/*line-height: 90px;*/
-	transition: 0.2s;
-}
+
 
 #hover-line {
 	position: fixed;
@@ -57,7 +60,7 @@
 	display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
 /*	.menu-box {
 		position: fixed;
 		top: 0;

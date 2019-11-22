@@ -8,29 +8,25 @@ import './Home.css';
 import ScrollDownButton from "../scroll-down-button/scroll-down-button.component"
 // import PaperTexture from './paper-texture.jpg'
 
-const Home = (onRouteChange) => {
+const Home = ({onRouteChange, offsetVal}) => {
 	return (
-		<div>
-			<div className="home-page">
+			<div className="home-page page">
 				<div className="home-content">
-					<div id="main-card" style={{"display": "flex", "justifyContent": "space-between",
-						"width": "80%", "margin": "auto"}}>
-					<div className="home-text" style={{"textAlign": "left"}}>
-						Is that a lemon tree?
-					</div>
-					<img className="clarice" src={Claireon} alt=""/>
-				</div>
+						<div className="home-text">
+						I'm Leon, and I make 
+						<span className="home-text2"> code you can count on</span>
+						</div>
+						<img className="clarice" src={Claireon} alt=""/>
 				</div>
 					<Link activeClass="active"
             to="about-page"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={offsetVal}
             duration={500}>
 						<ScrollDownButton />
           </Link>
 			</div>
-		</div>
 	);
 };
 

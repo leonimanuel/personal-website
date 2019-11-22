@@ -14,28 +14,34 @@ import ScrollDownButton from "../scroll-down-button/scroll-down-button.component
 
 
 
-const About = () => (
-	<div className="about-page">
-		<h1 className="about-header">About Me</h1>
+const About = ({offsetVal}) => (
+	<div className="about-page page">
+		<h1 className="about-header page-header">About Me</h1>
 		<div className="about-content">
 			<div className="about-pic-and-text">
-				<img className="profile-pic" src={ProfilePic} alt="" width="300" height=""/>
+				<img className="profile-pic" src={ProfilePic} alt="" height=""/>
 				<div className="about-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Self-taught | NYC-based <br /> <br />
+					Developer with a passion for clean, engaging and accesible web design.
+					I make intuitive websites that keep up effortlessly with ideas as they grow in scale and in ambition.
+					I specialize in React, Node, and online security. <br /> <br />
+					I can get you where you want to go.
+
+
 				</div>
 			</div>
-			
+			<div className="about-divider"></div>
 			<div className="qualities-container">
 				<div className="qualities-group1">
 					<div className="quality-box">
 						<img className="quality-pic" src={EngagingIcon} alt=""/>
 						<h3 className="quality-header">Engaging</h3>
-						<div className="quality-text">Lorem ipsum dolor Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
+						<div className="quality-text">Design that turns your website into not just a destination, but an experience </div>
 					</div>
 					<div className="quality-box">
 						<img className="quality-pic" src={ScalableIcon} alt=""/>
 						<h3 className="quality-header">Responsive</h3>
-						<div className="quality-text">Lorem ipsum dolor Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
+						<div className="quality-text">Websites and web-apps that work on any screen, big or small</div>
 					</div>
 				</div>
 				
@@ -43,12 +49,12 @@ const About = () => (
 					<div className="quality-box">
 						<img className="quality-pic" src={ScalableIcon} alt=""/>
 						<h3 className="quality-header">Fast</h3>
-						<div className="quality-text">Lorem ipsum dolor Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
+						<div className="quality-text">From front-end to back, everything is optimized to make sure content loads ASAP</div>
 					</div>
 					<div className="quality-box">
 						<img className="quality-pic" src={EngagingIcon} alt=""/>
 						<h3 className="quality-header">Scalable</h3>
-						<div className="quality-text">Lorem ipsum dolor Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
+						<div className="quality-text">Built to grow from the ground up. Infinitely scalable and effortlessly readable</div>
 					</div>
 				</div>
 				
@@ -58,7 +64,7 @@ const About = () => (
       to="skills-page"
       spy={true}
       smooth={true}
-      offset={-60}
+      offset={offsetVal}
       duration={500}>
 			<ScrollDownButton />
     </Link>

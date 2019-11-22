@@ -6,10 +6,10 @@ import "./contact.styles.css"
 import ContactForm from "../contact-form/contact-form.component"
 import ContactIcons from  "../contact-icons/contact-icons.component"
 
-const Contact = (onRouteChange) => {
+const Contact = ({onRouteChange, offsetVal}) => {
 	return (
-		<div className="contact-page">
-			<div style={{'fontSize': '50px'}}>Contact</div>
+		<div className="contact-page page">
+			<div className="contact-header page-header">Contact</div>
 			<div className="form-and-icons">
 				<ContactForm />
 				<ContactIcons />

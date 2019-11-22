@@ -88,260 +88,265 @@ class Skills extends React.Component {
 	}
 
 	render() {
+		const { offsetVal } = this.props
 		return (
-			<div className="skills-page">
-				<div className="skills-header">SKILLS</div>
-				<div className="skills-container">
-					<div className="skills-wrapper">
-						<div className="skill-symbol-box-back">
-							<img className="skill-symbol " src={CodingSymbol} alt="" />
-						</div>
-						<div className="skill-symbol-box">
-							<img className="skill-symbol " src={CodingSymbol} alt="" />
-						</div>
-						
-						<div className="skill-title-box-back">
-							<h1 className="skill-title">Client-Side</h1>
-						</div>
-						<div className="skill-title-box">
-							<h1 className="skill-title">Client-Side</h1>
-						</div>
-						
-						<div className="skill-box">
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20" height=""/>
-								<div className="skill-item">HTML</div>
-							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={CssLogo} alt="" width="20" height=""/>
-								<div className="skill-item">CSS</div>
-							</div>
-							<div className="skill-binder collapsible" id="js-collapsible">
-								<img className="logo" id="CssLogo" src={JsLogo} alt="" width="20" height=""/>
-								<div className="skill-item">JavaScript</div>
-							</div>
-							<div className="subskill-box" style={{"display": "none"}}>
-								<div className="subskill-binder">
-									<img className="subskill-logo" src={HtmlLogo} alt=""/>
-									<p className="subskill-item">Vanilla JS</p>
-								</div>
-								<div className="subskill-binder">
-									<img className="subskill-logo" src={HtmlLogo} alt=""/>
-									<p className="subskill-item">JQuery</p>
-								</div>
-							</div>
-							<div className="skill-binder collapsible">
-								<img className="logo" id="CssLogo" src={ReactLogo} alt="" width="20" height=""/>
-								<div className="skill-item">React</div>
-							</div>
-							<div className="subskill-box" style={{"display": "none"}}>
-								<div className="subskill-binder">
-									<img className="subskill-logo" src={HtmlLogo} alt=""/>
-									<p className="subskill-item">Redux</p>
-								</div>
-								<div className="subskill-binder">
-									<img className="subskill-logo" src={HtmlLogo} alt=""/>
-									<p className="subskill-item">Router</p>
-								</div>
-								<div className="subskill-binder">
-									<img className="subskill-logo" src={HtmlLogo} alt=""/>
-									<p className="subskill-item">Reselect</p>
-								</div>
-							</div>
-							<div className="skill-binder collapsible">
-								<img className="logo" id="CssLogo" src={NodeLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Node</div>
-							</div>
-							<div className="skill-binder collapsible">
-								<img className="logo" id="CssLogo" src={TypeScriptLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">TypeScript</div>
-							</div>
-						</div>
-					</div>
+			<div className="skills-page page">
+				<div className="skills-and-header">
+					<div className="skills-header page-header">SKILLS</div>
+					<div className="skills-container">
 
-					<div className="skills-wrapper">
-						<div className="skill-symbol-box-back">
-							<img className="skill-symbol " src={SecuritySymbol} alt="" />
-						</div>
-						<div className="skill-symbol-box">
-							<img className="skill-symbol " src={SecuritySymbol} alt="" />
-						</div>
-						
-						<div className="skill-title-box-back">
-							<h1 className="skill-title">Security</h1>
-						</div>
-						<div className="skill-title-box">
-							<h1 className="skill-title">Security</h1>
-						</div>
-						
-						<div className="skill-box">
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={KeyIcon} alt="" width="20px" height=""/>
-								<div className="skill-item">SSH</div>
+						<div className="skills-wrapper">
+							<div className="skill-symbol-box-back">
+								<img className="skill-symbol " src={CodingSymbol} alt="" />
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Sessions & JWT</div>
+							<div className="skill-symbol-box">
+								<img className="skill-symbol " src={CodingSymbol} alt="" />
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HashLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Bcrypt</div>
+							
+							<div className="skill-title-box-back">
+								<h1 className="skill-title">Client-Side</h1>
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={FirebaseLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Firebase Auth</div>
+							<div className="skill-title-box">
+								<h1 className="skill-title">Client-Side</h1>
+							</div>
+							
+							<div className="skill-box">
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20" height=""/>
+									<div className="skill-item">HTML</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={CssLogo} alt="" width="20" height=""/>
+									<div className="skill-item">CSS</div>
+								</div>
+								<div className="skill-binder collapsible" id="js-collapsible">
+									<img className="logo" id="CssLogo" src={JsLogo} alt="" width="20" height=""/>
+									<div className="skill-item">JavaScript</div>
+								</div>
+								<div className="subskill-box" style={{"display": "none"}}>
+									<div className="subskill-binder">
+										<img className="subskill-logo" src={HtmlLogo} alt=""/>
+										<p className="subskill-item">Vanilla JS</p>
+									</div>
+									<div className="subskill-binder">
+										<img className="subskill-logo" src={HtmlLogo} alt=""/>
+										<p className="subskill-item">JQuery</p>
+									</div>
+								</div>
+								<div className="skill-binder collapsible">
+									<img className="logo" id="CssLogo" src={ReactLogo} alt="" width="20" height=""/>
+									<div className="skill-item">React</div>
+								</div>
+								<div className="subskill-box" style={{"display": "none"}}>
+									<div className="subskill-binder">
+										<img className="subskill-logo" src={HtmlLogo} alt=""/>
+										<p className="subskill-item">Redux</p>
+									</div>
+									<div className="subskill-binder">
+										<img className="subskill-logo" src={HtmlLogo} alt=""/>
+										<p className="subskill-item">Router</p>
+									</div>
+									<div className="subskill-binder">
+										<img className="subskill-logo" src={HtmlLogo} alt=""/>
+										<p className="subskill-item">Reselect</p>
+									</div>
+								</div>
+								<div className="skill-binder collapsible">
+									<img className="logo" id="CssLogo" src={NodeLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Node</div>
+								</div>
+								<div className="skill-binder collapsible">
+									<img className="logo" id="CssLogo" src={TypeScriptLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">TypeScript</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div className="skills-wrapper">
-						<div className="skill-symbol-box-back">
-							<img className="skill-symbol " src={PerformanceSymbol} alt="" />
-						</div>
-						<div className="skill-symbol-box">
-							<img className="skill-symbol " src={PerformanceSymbol} alt="" />
-						</div>
-						
-						<div className="skill-title-box-back">
-							<h1 className="skill-title">Performance</h1>
-						</div>
-						<div className="skill-title-box">
-							<h1 className="skill-title">Performance</h1>
-						</div>
-						
-						<div className="skill-box">
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={ScissorsLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Code splitting</div>
+						<div className="skills-wrapper">
+							<div className="skill-symbol-box-back">
+								<img className="skill-symbol " src={SecuritySymbol} alt="" />
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={BalanceLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Load balancing</div>
+							<div className="skill-symbol-box">
+								<img className="skill-symbol " src={SecuritySymbol} alt="" />
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Caching</div>
+							
+							<div className="skill-title-box-back">
+								<h1 className="skill-title">Security</h1>
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={PicturesLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Image optimzation</div>
+							<div className="skill-title-box">
+								<h1 className="skill-title">Security</h1>
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Progressive web apps</div>
+							
+							<div className="skill-box">
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={KeyIcon} alt="" width="20px" height=""/>
+									<div className="skill-item">SSH</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Sessions & JWT</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HashLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Bcrypt</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={FirebaseLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Firebase Auth</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div className="skills-wrapper">
-						<div className="skill-symbol-box-back">
-							<img className="skill-symbol " src={DatabaseSymbol} alt="" />
-						</div>
-						<div className="skill-symbol-box">
-							<img className="skill-symbol " src={DatabaseSymbol} alt="" />
-						</div>
-						
-						<div className="skill-title-box-back">
-							<h1 className="skill-title">Server-side</h1>
-						</div>
-						<div className="skill-title-box">
-							<h1 className="skill-title">Server-side</h1>
-						</div>
-						<div className="skill-box">
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={FirebaseLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Firebase</div>
+						<div className="skills-wrapper">
+							<div className="skill-symbol-box-back">
+								<img className="skill-symbol " src={PerformanceSymbol} alt="" />
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={PostgresqlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">PostgreSQL</div>
+							<div className="skill-symbol-box">
+								<img className="skill-symbol " src={PerformanceSymbol} alt="" />
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={RedisLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Redis</div>
+							
+							<div className="skill-title-box-back">
+								<h1 className="skill-title">Performance</h1>
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={GraphqlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">GraphQL</div>
+							<div className="skill-title-box">
+								<h1 className="skill-title">Performance</h1>
 							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={ApolloLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Apollo</div>
+							
+							<div className="skill-box">
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={ScissorsLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Code splitting</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={BalanceLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Load balancing</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Caching</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={PicturesLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Image optimzation</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Progressive web apps</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="skills-wrapper">
+							<div className="skill-symbol-box-back">
+								<img className="skill-symbol " src={DatabaseSymbol} alt="" />
+							</div>
+							<div className="skill-symbol-box">
+								<img className="skill-symbol " src={DatabaseSymbol} alt="" />
+							</div>
+							
+							<div className="skill-title-box-back">
+								<h1 className="skill-title">Server-Side</h1>
+							</div>
+							<div className="skill-title-box">
+								<h1 className="skill-title">Server-Side</h1>
+							</div>
+							<div className="skill-box">
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={FirebaseLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Firebase</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={PostgresqlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">PostgreSQL</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={RedisLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Redis</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={GraphqlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">GraphQL</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={ApolloLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Apollo</div>
+								</div>
+							</div>
+						</div>
+						<div className="skills-wrapper">
+							<div className="skill-symbol-box-back">
+								<img className="skill-symbol " src={TestingSymbol} alt="" />
+							</div>
+							<div className="skill-symbol-box">
+								<img className="skill-symbol " src={TestingSymbol} alt="" />
+							</div>
+							
+							<div className="skill-title-box-back">
+								<h1 className="skill-title">Testing</h1>
+							</div>
+							<div className="skill-title-box">
+								<h1 className="skill-title">Testing</h1>
+							</div>
+							<div className="skill-box">
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Testing</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Testing</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Testing</div>
+								</div>
+							</div>
+						</div>
+						<div className="skills-wrapper">
+							<div className="skill-symbol-box-back">
+								<img className="skill-symbol " src={DeploymentSymbol} alt="" />
+							</div>
+							<div className="skill-symbol-box">
+								<img className="skill-symbol " src={DeploymentSymbol} alt="" />
+							</div>
+							
+							<div className="skill-title-box-back">
+								<h1 className="skill-title">Deployment</h1>
+							</div>
+							<div className="skill-title-box">
+								<h1 className="skill-title">Deployment</h1>
+							</div>
+							<div className="skill-box">
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={AwsLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Amazon Web</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={HerokuLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Heroku</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="CssLogo" src={WebpackLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Webpack 4</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="parcel-icon" src={ParcelLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Parcel</div>
+								</div>
+								<div className="skill-binder">
+									<img className="logo" id="docker-icon" src={DockerLogo} alt="" width="20px" height=""/>
+									<div className="skill-item">Docker</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div className="skills-wrapper">
-						<div className="skill-symbol-box-back">
-							<img className="skill-symbol " src={TestingSymbol} alt="" />
-						</div>
-						<div className="skill-symbol-box">
-							<img className="skill-symbol " src={TestingSymbol} alt="" />
-						</div>
-						
-						<div className="skill-title-box-back">
-							<h1 className="skill-title">Testing</h1>
-						</div>
-						<div className="skill-title-box">
-							<h1 className="skill-title">Testing</h1>
-						</div>
-						<div className="skill-box">
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Testing</div>
-							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Testing</div>
-							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Testing</div>
-							</div>
-						</div>
-					</div>
-					<div className="skills-wrapper">
-						<div className="skill-symbol-box-back">
-							<img className="skill-symbol " src={DeploymentSymbol} alt="" />
-						</div>
-						<div className="skill-symbol-box">
-							<img className="skill-symbol " src={DeploymentSymbol} alt="" />
-						</div>
-						
-						<div className="skill-title-box-back">
-							<h1 className="skill-title">Deployment</h1>
-						</div>
-						<div className="skill-title-box">
-							<h1 className="skill-title">Deployment</h1>
-						</div>
-						<div className="skill-box">
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={AwsLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Amazon Web</div>
-							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={HerokuLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Heroku</div>
-							</div>
-							<div className="skill-binder">
-								<img className="logo" id="CssLogo" src={WebpackLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Webpack 4</div>
-							</div>
-							<div className="skill-binder">
-								<img className="logo" id="parcel-icon" src={ParcelLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Parcel</div>
-							</div>
-							<div className="skill-binder">
-								<img className="logo" id="docker-icon" src={DockerLogo} alt="" width="20px" height=""/>
-								<div className="skill-item">Docker</div>
-							</div>
-						</div>
-					</div>
+					<div className="skills-header page-header header-back">SKILLS</div>
 				</div>
 				<Link activeClass="active"
             to="projects-page"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={offsetVal}
             duration={500}>
 						<ScrollDownButton />
           </Link>

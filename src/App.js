@@ -20,6 +20,7 @@ class App extends Component {
 		super()
 		this.state = {
 			route: 'skills',
+			offsetVal: -35
 			// routeItem: "hohoho"
 		}
 	}
@@ -31,21 +32,32 @@ class App extends Component {
 		// console.log(this.state.routeItem)
 	}
 
-	
+	componentDidMount() {
+		// console.log(document.getElementById("nav-proj-link").getAttribute("to"))
+		// let x = document.getElementById("nav-container").style.height
+		// console.log(x)
+
+		console.log(document.documentElement.clientHeight)
+		this.setState({offsetVal: (-document.documentElement.clientHeight * .07)})
+		console.log(document.documentElement.clientWidth)
+		if (document.documentElement.clientWidth < 600) {
+			this.setState({offsetVal: -50})
+		}
+	}
 
   render() {
-  	const { route } = this.state; 
+  	const { route, offsetVal } = this.state; 
   	return (
 			<div className="App">
 			<div className="app-container" id="app-container">
-				<SmallNav onRouteChange={this.onRouteChange} />
-				<Navigation onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
+				<SmallNav offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
+				<Navigation offsetVal={offsetVal} onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
 				
-				<Home onRouteChange={this.onRouteChange} />
-				<About />
-				<Skills id="skills-component" onRouteChange={this.onRouteChange} />
-				<Projects onRouteChange={this.onRouteChange} />
-				<Contact onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
+				<Home offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
+				<About offsetVal={offsetVal}/>
+				<Skills offsetVal={offsetVal} id="skills-component" onRouteChange={this.onRouteChange} />
+				<Projects offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
+				<Contact offsetVal={offsetVal} onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
 				{/* <DarkMode /> */}
 			</div>
 				

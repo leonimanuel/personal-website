@@ -1,8 +1,8 @@
 .about-page {
 	/*padding-top: 60px;*/
 
-	min-height: 100vh;
-	border: 3px solid black;
+	/*min-height: 100vh;*/
+	/*border: 3px solid black;*/
 	position: relative;
 	background-color: lightblue;
 }
@@ -11,11 +11,12 @@
 	/*height: 100vh;*/
 	display: flex;
 	flex-wrap: wrap;
-	/*justify-content: center;*/
+	align-items: top;
+	justify-content: center;
 	/*max-width: 600px;*/
 
 	/*max-width: 500px;*/
-	border: 3px solid orange;
+	/*border: 3px solid orange;*/
 	font-weight: bold;
 	/*background-color: lightblue;*/
 
@@ -25,40 +26,50 @@
 	/*height: 100%;*/
 	/*border: 3px solid pink;*/
 	font-size: 50px;
+	margin-top: 0;
+	display: none;
+
 }
 
 .about-pic-and-text {
-	width: 50%;
+	width: 49%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	border: 3px solid grey;
+	/*justify-content: center;*/
+	/*border: 3px solid grey;*/
 }
 
 .profile-pic {
 	/*border: 1px solid black;*/
 	border-radius: 150px;
-	height: 300px;
+	width: 200px;
+	/*height: 200px;*/
 	margin: 20px auto;
 }
 
 .about-text {
 	width: 80%;
 	text-align: justify;
-	font-size: 25px;
+	font-size: 20px;
 	/*border: 5px solid orange;*/
 }
 
+.about-divider {
+	width: .1%;
+	height: 400px;
+	border: 1px solid black;
+	margin: auto 0;
+}
 
 .qualities-container {
-	width: 50%;
+	width: 49%;
 	/*height: 100%;*/
 	display: flex;
 	flex-direction: column;
 	/*width: 50%;*/
-	border: 4px solid purple;
-	border-left: 3px solid black;
+	/*border: 4px solid purple;*/
+	/*border-left: 3px solid black;*/
 	/*background-color: lightgreen;*/
 }
 
@@ -80,6 +91,7 @@
 	/*min-width: 250px;*/
 	/*height: 200px;*/
 	/*border: 2px solid green;*/
+	width: 200px;
 }
 
 .quality-header {
@@ -88,7 +100,11 @@
 	font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+.quality-text {
+	text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
 	.about-content {
 		/*background-color: green;*/
 		/*display: flex;*/
@@ -96,8 +112,44 @@
 		align-items: center;
 	}
 
+
 	.about-pic-and-text, .qualities-container {
 		width: 80%;
 	}
+
+	.about-divider {
+		height: 0;
+		width: 50%;
+		border: 1px solid black;
+		margin: 40px 0;
+	}
+}
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
 }
 

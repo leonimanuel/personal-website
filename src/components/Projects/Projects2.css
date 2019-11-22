@@ -1,7 +1,8 @@
+
 .projects-page {
 	/*padding-top: 60px;*/
 	width: 100%;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 	position: relative;
 /*	display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -11,8 +12,12 @@
 
   /*border: 5px solid purple;*/
   /*background-color: lightgreen;*/
-  background-color: grey;
+  background-color: darkcyan;
   /*z-index: 1;*/
+  display: flex;
+  flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
 }
 
 .projects-wrapper {
@@ -20,28 +25,39 @@
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  max-width: 1100px;
+
+  /*border: 3px solid green;*/
 }
 
 .projects-heading {
-	width: 100%;
-
-	font-size: 4em;
-
+	position: absolute;
+	right: -5%;
+	height: 100%;
+	margin: 0;
+	/*width: 100%;*/
+	font-size: 6em;
 	margin-bottom: 10px;
+	/*display: none;*/
+	
+	writing-mode: vertical-rl;
+	transform: translateX(-120px);
+
+	/*border: 3px solid orange;*/
 }
 
 .project-container {
 	/*min-width: 500px;*/
-	max-width: 750px;
+	max-width: 400px;
+	/*height: 300px;*/
 	display: flex;
 	flex-direction: column;
 	/*align-items: center;*/
-	border: 2px solid green;
+	/*border: 2px solid green;*/
 	/*background-image: url("crown-clothing-pic.png");*/
 	background-size: 300px 300px;
 	/*margin: 10px auto;*/
-	margin: 0 50px;
-	margin-bottom: 20px;
+	margin: 10px 20px;
 
 }
 
@@ -84,6 +100,10 @@
 	font-weight: bold;
 	/*border: 2px solid yellow;*/
 	text-align: left
+}
+
+a, a:active {
+	text-decoration: none;
 }
 
 .project-text-box:hover {

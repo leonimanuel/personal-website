@@ -29,6 +29,7 @@
 @media only screen and (max-width: 600px) {
 	.icons-container {
 		flex-direction: row;
+		margin-left: 0;
 		/*align-items: center;*/
 	}
 }

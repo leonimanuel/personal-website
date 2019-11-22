@@ -1,12 +1,13 @@
 .home-page {
-	/*padding-top: 60px;*/
-
+	/*padding-top: 95px;*/
 	width: 100%;
 	min-height: 100vh;
 	/*border: 5px solid red;*/
 	position: relative;
-
 	background-color: lightcoral;
+	display: flex;
+	align-items: center;
+
 }
 
 /*.profile-pic {
@@ -16,21 +17,28 @@
 }*/
 
 .home-content {
-	margin-top: 100px;
+	/*margin-top: 100px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .home-text {
-	font-size: 10em;
+	font-size: 9em;
 	/*min-width: 500px;*/
-	max-width: 750px;
+	/*max-width: 750px;*/
+	width: 90%;
 	font-family: 'Bebas Neue', cursive;
 	/*display: none;*/
-
 }
 /*#home-title {
 	margin-top: 20px;
 	font-size: 2em;
 }*/
+
+.home-text2 {
+	color: white;
+}
 
 .clarice {
 	width: 750px;
