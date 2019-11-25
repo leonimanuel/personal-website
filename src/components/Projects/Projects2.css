@@ -30,18 +30,21 @@
   /*border: 3px solid green;*/
 }
 
-.projects-heading {
-	position: absolute;
+.projects-and-header {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.projects-header {
+/*	position: absolute;
 	right: -5%;
 	height: 100%;
-	margin: 0;
+	margin: 0;*/
 	/*width: 100%;*/
 	font-size: 6em;
 	margin-bottom: 10px;
-	/*display: none;*/
-	
 	writing-mode: vertical-rl;
-	transform: translateX(-120px);
+	/*transform: translateX(-120px);*/
 
 	/*border: 3px solid orange;*/
 }

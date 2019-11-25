@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import About from "./components/about/about.component"
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Footer from './components/footer/footer.component';
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -20,7 +21,7 @@ class App extends Component {
 		super()
 		this.state = {
 			route: 'skills',
-			offsetVal: -35
+			offsetVal: ""
 			// routeItem: "hohoho"
 		}
 	}
@@ -49,18 +50,17 @@ class App extends Component {
   	const { route, offsetVal } = this.state; 
   	return (
 			<div className="App">
-			<div className="app-container" id="app-container">
-				<SmallNav offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
-				<Navigation offsetVal={offsetVal} onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
-				
-				<Home offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
-				<About offsetVal={offsetVal}/>
-				<Skills offsetVal={offsetVal} id="skills-component" onRouteChange={this.onRouteChange} />
-				<Projects offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
-				<Contact offsetVal={offsetVal} onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
-				{/* <DarkMode /> */}
-			</div>
-				
+				<div className="app-container" id="app-container">
+					<SmallNav offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
+					<Navigation offsetVal={offsetVal} onRouteChange={this.onRouteChange} slideSelection={this.slideSelection} />
+					
+					<Home offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
+					<About offsetVal={offsetVal}/>
+					<Skills offsetVal={offsetVal} id="skills-component" onRouteChange={this.onRouteChange} />
+					<Projects offsetVal={offsetVal} onRouteChange={this.onRouteChange} />
+					<Contact offsetVal={offsetVal} onRouteChange={this.onRouteChange} fadePageIn={this.fadePageIn} />
+					{/* <Footer /> <DarkMode /> */}
+				</div>
 			</div>
 	  );
   } 

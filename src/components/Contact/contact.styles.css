@@ -15,8 +15,8 @@
 	 border: 2px solid red;*/
 	position: absolute;
 	left: 3%;
-	height: 100%;
-	font-size: 8em;
+	/*height: 100%;*/
+	font-size: 5em;
 	writing-mode: vertical-rl;
 	transform: rotate(180deg) ;
 	z-index: 0;

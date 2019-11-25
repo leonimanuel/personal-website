@@ -9,10 +9,12 @@ import ContactIcons from  "../contact-icons/contact-icons.component"
 const Contact = ({onRouteChange, offsetVal}) => {
 	return (
 		<div className="contact-page page">
-			<div className="contact-header page-header">Contact</div>
-			<div className="form-and-icons">
-				<ContactForm />
-				<ContactIcons />
+			<div className="contact-and-header container-and-header">
+				<h1 className="contact-header page-header">Contact</h1>
+				<div className="form-and-icons">
+					<ContactForm />
+					<ContactIcons />
+				</div>
 			</div>
 		</div>
 		

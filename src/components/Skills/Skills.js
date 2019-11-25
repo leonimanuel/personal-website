@@ -28,6 +28,9 @@ import DockerLogo from "./docker-icon.svg"
 import BalanceLogo from "./balance-icon.svg"
 import PicturesLogo from "./pictures-icon.svg"
 import ScissorsLogo from "./scissors-icon.svg"
+import JwtLogo from "./jwt-icon.png"
+import CachingLogo from "./caching-icon.svg"
+import PwaLogo from "./pwa-icon.svg"
 
 import CodingSymbol from "./webdev-icon.svg"
 import SecuritySymbol from "./lock-icon.svg"
@@ -91,7 +94,7 @@ class Skills extends React.Component {
 		const { offsetVal } = this.props
 		return (
 			<div className="skills-page page">
-				<div className="skills-and-header">
+				<div className="skills-and-header container-and-header">
 					<div className="skills-header page-header">SKILLS</div>
 					<div className="skills-container">
 
@@ -183,7 +186,7 @@ class Skills extends React.Component {
 									<div className="skill-item">SSH</div>
 								</div>
 								<div className="skill-binder">
-									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<img className="logo" id="CssLogo" src={JwtLogo} alt="" width="20px" height=""/>
 									<div className="skill-item">Sessions & JWT</div>
 								</div>
 								<div className="skill-binder">
@@ -222,7 +225,7 @@ class Skills extends React.Component {
 									<div className="skill-item">Load balancing</div>
 								</div>
 								<div className="skill-binder">
-									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<img className="logo" id="CssLogo" src={CachingLogo} alt="" width="20px" height=""/>
 									<div className="skill-item">Caching</div>
 								</div>
 								<div className="skill-binder">
@@ -230,7 +233,7 @@ class Skills extends React.Component {
 									<div className="skill-item">Image optimzation</div>
 								</div>
 								<div className="skill-binder">
-									<img className="logo" id="CssLogo" src={HtmlLogo} alt="" width="20px" height=""/>
+									<img className="logo" id="CssLogo" src={PwaLogo} alt="" width="20px" height=""/>
 									<div className="skill-item">Progressive web apps</div>
 								</div>
 							</div>

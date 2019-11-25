@@ -7,7 +7,8 @@
 	background-color: lightcoral;
 	display: flex;
 	align-items: center;
-
+	background-image: url("code-background.png");
+	background-size: cover; 
 }
 
 /*.profile-pic {
@@ -17,15 +18,21 @@
 }*/
 
 .home-content {
+	margin: 0 auto;
+	color: white;
+	width: 90%;
 	/*margin-top: 100px;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/*text-align: center;*/
+	/*border: 2px solid blue;*/
 
 }
 
 .home-text {
-	font-size: 10vw; /*bad magic number*/
+	font-size: 8em; /*bad magic number*/
+	/*border: 2px solid red;*/
 	/*font-size: 10em;*/
 	/*min-width: 500px;*/
 	/*max-width: 750px;*/

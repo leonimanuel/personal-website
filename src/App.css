@@ -16,6 +16,7 @@ div {
   /*background-color: red;*/
   /*border: 5px solid blue;*/
   /*z-index: -5;*/
+  /*height: 100vh;*/
 }
 
 .App-logo {
@@ -58,17 +59,22 @@ div {
 }
 
 @media only screen and (max-width: 600px) {
-   .skills-header, .projets-header, .contact-header {
-    position: relative !important;
+   .skills-header, .projects-header, .contact-header {
+    position: static !important;
     font-size: 50px !important;
     writing-mode: horizontal-tb !important;
     transform: rotate(0deg) !important;
-    text-align: center !important;
+    /*text-align: center !important;*/
     margin: 0;
+    text-align: center !important;
   }
 
-  .skills-and-header {
-    flex-direction: column;
+  .container-and-header {
+    flex-direction: column !important;
+  }
+
+  .home-text {
+    font-size: 100px !important;
   }
 }
 

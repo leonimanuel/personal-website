@@ -4,6 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import './Navigation.css';
 
+import MenuIcon from "./menu-icon.svg"
 
 // navBoi.style.backgroundColor = "red"
 
@@ -191,7 +192,12 @@ class Navigation extends React.Component {
 						<p className="nav-item" id="nav-contact" onClick={() => { onRouteChange('contact'); this.chooseItem() }} onMouseOver={this.slideHover} onMouseLeave={this.snapBack} style={{'marginRight': '0px',}} >Contact</p>
 					</Link>
 				</div>
-				<p className="nav-item navbar-icon" onClick={this.shrinkMenu}>BOOP</p>
+				
+				<div className="nav-item navbar-icon" src={MenuIcon} alt="" onClick={this.shrinkMenu}>
+					<div className="navbar-icon-bar"></div>
+					<div className="navbar-icon-bar"></div>
+					<div className="navbar-icon-bar"></div>
+				</div>
 			</nav>
 			<div id="hover-line"></div>
 		</div>
@@ -213,5 +219,6 @@ class Navigation extends React.Component {
 // 	);
 // }
 
+// <img className="nav-item navbar-icon" src={MenuIcon} alt="" onClick={this.shrinkMenu} />
 
 export default Navigation;

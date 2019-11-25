@@ -50,7 +50,7 @@
 
 .about-text {
 	width: 80%;
-	text-align: justify;
+	text-align: left;
 	font-size: 20px;
 	/*border: 5px solid orange;*/
 }
@@ -87,11 +87,31 @@
 
 }
 
+svg {
+	width: 50px;
+	height: 50px;
+}
+
+.quality-image {
+	position: relative;
+}
+
 .quality-pic {
 	/*min-width: 250px;*/
 	/*height: 200px;*/
 	/*border: 2px solid green;*/
-	width: 200px;
+	width: 100px;
+}
+
+.quality-icon {
+	width: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+
 }
 
 .quality-header {
@@ -125,31 +145,4 @@
 	}
 }
 
-.hexagon {
-  position: relative;
-  width: 300px; 
-  height: 173.21px;
-  background-color: #64C7CC;
-  margin: 86.60px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 86.60px solid #64C7CC;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 86.60px solid #64C7CC;
-}
 

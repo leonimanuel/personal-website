@@ -4,10 +4,11 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import "./about.styles.css";
 
 import ProfilePic from './profile-pic.jpg'
-import FastIcon from "./fast-icon.png";
-import ResponsiveIcon from "./responsive-icon.png";
+import ResponsiveIcon from "./responsive-icon.svg";
 import EngagingIcon from "./engaging-icon.svg";
 import ScalableIcon from "./scalable-icon.svg";
+import Hexagon from "./hexagon-icon.png"
+import FastIcon from "./fast-icon.svg"
 
 import ScrollDownButton from "../scroll-down-button/scroll-down-button.component"
 
@@ -34,12 +35,19 @@ const About = ({offsetVal}) => (
 			<div className="qualities-container">
 				<div className="qualities-group1">
 					<div className="quality-box">
-						<img className="quality-pic" src={EngagingIcon} alt=""/>
+						<div className="quality-image">
+							<img className="quality-pic" src={Hexagon} alt=""/>
+							<img className="quality-icon" src={EngagingIcon} alt=""/>
+						</div>
+						
 						<h3 className="quality-header">Engaging</h3>
 						<div className="quality-text">Design that turns your website into not just a destination, but an experience </div>
 					</div>
 					<div className="quality-box">
-						<img className="quality-pic" src={ScalableIcon} alt=""/>
+						<div className="quality-image">
+							<img className="quality-pic" src={Hexagon} alt=""/>
+							<img className="quality-icon" src={ResponsiveIcon} alt=""/>
+						</div>
 						<h3 className="quality-header">Responsive</h3>
 						<div className="quality-text">Websites and web-apps that work on any screen, big or small</div>
 					</div>
@@ -47,12 +55,18 @@ const About = ({offsetVal}) => (
 				
 				<div className="qualities-group2">
 					<div className="quality-box">
-						<img className="quality-pic" src={ScalableIcon} alt=""/>
+						<div className="quality-image">
+							<img className="quality-pic" src={Hexagon} alt=""/>
+							<img className="quality-icon" src={FastIcon} alt=""/>
+						</div>
 						<h3 className="quality-header">Fast</h3>
 						<div className="quality-text">From front-end to back, everything is optimized to make sure content loads ASAP</div>
 					</div>
 					<div className="quality-box">
-						<img className="quality-pic" src={EngagingIcon} alt=""/>
+						<div className="quality-image">
+							<img className="quality-pic" src={Hexagon} alt=""/>
+							<img className="quality-icon" src={ScalableIcon} alt=""/>
+						</div>
 						<h3 className="quality-header">Scalable</h3>
 						<div className="quality-text">Built to grow from the ground up. Infinitely scalable and effortlessly readable</div>
 					</div>

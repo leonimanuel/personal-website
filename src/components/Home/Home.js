@@ -12,11 +12,9 @@ const Home = ({onRouteChange, offsetVal}) => {
 	return (
 			<div className="home-page page">
 				<div className="home-content">
-						<div className="home-text">
-						I'm Leon, and I make 
-						<span className="home-text2"> code you can count on</span>
-						</div>
-						<img className="clarice" src={Claireon} alt=""/>
+					<div class="home-text">
+						code you can count on
+					</div>
 				</div>
 					<Link activeClass="active"
             to="about-page"

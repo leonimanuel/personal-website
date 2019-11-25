@@ -21,71 +21,73 @@ import SquelchifyPic from "./codemonkey-pic.png"
 const Projects = ({onRouteChange, offsetVal}) => {
 	return (
 	<div className="projects-page page">
-		<h1 className="projects-heading page-header">PROJECTS</h1>
-		<div className="projects-wrapper">
-			<div className="project-container">
-				<div className="pic-and-text">
-					<img className="project-pic" src={CrownClothingPic} alt=""/>
-					<div className="project-text-box">
-						<h2 className="project-title">Crown Clothing</h2>
-						<div className="project-text">
-							A fully realized e-commerce React app with Firebase authorization and data storage, 
-							and redux for state management. Utilizes local storage for session persistence and React
-							Router for navigation.
-	 					</div>
-	 					<a href="https://crown-clothing-lim.herokuapp.com/" target="_blank">
-		 					<ProjectButton />
-		 				</a>
+		<div className="projects-and-header container-and-header">
+			<h1 className="projects-header page-header">PROJECTS</h1>
+			<div className="projects-wrapper">
+				<div className="project-container">
+					<div className="pic-and-text">
+						<img className="project-pic" src={CrownClothingPic} alt=""/>
+						<div className="project-text-box">
+							<h2 className="project-title">Crown Clothing</h2>
+							<div className="project-text">
+								A fully realized e-commerce React app with Firebase authorization and data storage, 
+								and redux for state management. Utilizes local storage for session persistence and React
+								Router for navigation.
+		 					</div>
+		 					<a href="https://crown-clothing-lim.herokuapp.com/" target="_blank">
+			 					<ProjectButton />
+			 				</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className="project-container">
-				<div className="pic-and-text">
-					<img className="project-pic" src={SmartbrainPic} alt=""/>
-					<div className="project-text-box">
-						<h2 className="project-title">Face Finder</h2>
-						<div className="project-text">
-							A no-frills React app that detects faces in any image url given by the user using Clarifai's 
-							API, while recording and displaying a user's score. Utilizes a PostgreSQL database, server
-							written with Knex.js. 
-		 				</div>
-		 				<a href="https://smart-brain-lim.herokuapp.com/" target="_blank">
-		 					<ProjectButton />
-		 				</a>
+				<div className="project-container">
+					<div className="pic-and-text">
+						<img className="project-pic" src={SmartbrainPic} alt=""/>
+						<div className="project-text-box">
+							<h2 className="project-title">Face Finder</h2>
+							<div className="project-text">
+								A no-frills React app that detects faces in any image url given by the user using Clarifai's 
+								API, while recording and displaying a user's score. Utilizes a PostgreSQL database, server
+								written with Knex.js. 
+			 				</div>
+			 				<a href="https://smart-brain-lim.herokuapp.com/" target="_blank">
+			 					<ProjectButton />
+			 				</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className="project-container">
-				<div className="pic-and-text">
-					<img className="project-pic" src={HangmanPic} alt=""/>
-					<div className="project-text-box">
-						<h2 className="project-title">Hangman</h2>
-						<div className="project-text">
-							A single-page game of hangman built with Vanilla JS and JQuery. Features extensive and dynamic
-							DOM manipulation.
-	 					</div>
-	 					<a href="https://hangman-clean.herokuapp.com/" target="_blank">
-		 					<ProjectButton />
-		 				</a>
+				<div className="project-container">
+					<div className="pic-and-text">
+						<img className="project-pic" src={HangmanPic} alt=""/>
+						<div className="project-text-box">
+							<h2 className="project-title">Hangman</h2>
+							<div className="project-text">
+								A single-page game of hangman built with Vanilla JS and JQuery. Features extensive and dynamic
+								DOM manipulation.
+		 					</div>
+		 					<a href="https://hangman-clean.herokuapp.com/" target="_blank">
+			 					<ProjectButton />
+			 				</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className="project-container">
-				<div className="pic-and-text">
-					<img className="project-pic" src={SquelchifyPic} alt=""/>
-					<div className="project-text-box">
-						<h2 className="project-title">SQUELFCHIFFY</h2>
-						<div className="project-text">
-							MY FUCKING WEBSITE
-	 					</div>
-	 					<Link activeClass="active"
-	            to="home-page"
-	            spy={true}
-	            smooth={true}
-	            offset={offsetVal}
-	            duration={500}>
-	 						<ProjectButton />
-	 					</Link>
+				<div className="project-container">
+					<div className="pic-and-text">
+						<img className="project-pic" src={SquelchifyPic} alt=""/>
+						<div className="project-text-box">
+							<h2 className="project-title">SQUELFCHIFFY</h2>
+							<div className="project-text">
+								MY FUCKING WEBSITE
+		 					</div>
+		 					<Link activeClass="active"
+		            to="home-page"
+		            spy={true}
+		            smooth={true}
+		            offset={offsetVal}
+		            duration={500}>
+		 						<ProjectButton />
+		 					</Link>
+						</div>
 					</div>
 				</div>
 			</div>
