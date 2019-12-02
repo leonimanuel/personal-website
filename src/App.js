@@ -16,6 +16,11 @@ import Footer from './components/footer/footer.component';
 
 document.body.style.color = "black";
 
+var http = require("http");
+setInterval(function() {
+    http.get("https:/lmalisov-personal-website.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
+
 class App extends Component {
 	constructor() {
 		super()
