@@ -77,7 +77,7 @@ const Projects = ({onRouteChange, offsetVal}) => {
 						<div className="project-text-box">
 							<h2 className="project-title">SQUELFCHIFFY</h2>
 							<div className="project-text">
-								MY FUCKING WEBSITE
+								My personal website, built with React. Utilizes CSS animations and react-scroll for visual effect. 
 		 					</div>
 		 					<Link activeClass="active"
 		            to="home-page"
